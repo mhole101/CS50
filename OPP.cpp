@@ -1,10 +1,16 @@
 #include <iostream>
 using std::string;
 
+//abstraction
+//any class that inherits this abstract
+//class with pure virtual function must
+//provide implementation for
+//AskForPromotion() method
 class AbstractEmployee {
     virtual void AskForPromotion()=0;
 };
-
+// Employee:AbstractEmployee
+// Employee is inheriting AbstractEmployee
 class Employee:AbstractEmployee {
     private:
     string Name;
