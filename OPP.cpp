@@ -13,9 +13,12 @@ class AbstractEmployee {
 // Employee is inheriting AbstractEmployee
 class Employee:AbstractEmployee {
     private:
-    string Name;
+
     string Company;
     int Age;
+    // protected allows access in
+    protected: //inherited classes
+    string Name;
 
     public:
 
@@ -78,7 +81,7 @@ class Developer: Employee {
         FavProgrammingLanguage = favProgrammingLanguage;
     }
     void FixBug(){
-        std::cout<<getName()<<" fixed bug using " << FavProgrammingLanguage << std::endl;
+        std::cout<<Name<<" fixed bug using " << FavProgrammingLanguage << std::endl;
     }
 
 };
