@@ -52,7 +52,10 @@ class Employee:AbstractEmployee {
         Age = age;
     }
     void AskForPromotion() {
-        
+        if (Age > 30)
+            std::cout << Name << " got promoted!" << std::endl;
+        else
+            std::cout << Name << " sorry NO promotion for you!" << std::endl;
     }
 
 
@@ -68,7 +71,10 @@ int main()
     employee2.IntroduceYourself();
 
     //testing setAge method/function
-    employee1.setAge(34);
+    employee1.setAge(24);
     std::cout << employee1.getName() << " is " << employee1.getAge() << " years old." << std::endl;
+
+    employee1.AskForPromotion();
+    employee2.AskForPromotion();
 
 };
