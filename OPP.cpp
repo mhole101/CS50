@@ -72,7 +72,11 @@ class Employee:AbstractEmployee {
 //Inheritance
 //Developer is child/sub/derived class
 //Employee is parent/base/super class
-class Developer: Employee {
+//Employee is private
+//public Employee is public
+//public allows access to parent class
+//methods
+class Developer:public Employee {
     public:
     string FavProgrammingLanguage;
     Developer(string name, string company, int age, string favProgrammingLanguage)
@@ -105,4 +109,5 @@ int main()
     //Inherited class object
     Developer d = Developer("Matt", "Google", 23, "C++");
     d.FixBug();
+    d.AskForPromotion();
 };
