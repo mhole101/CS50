@@ -33,7 +33,14 @@ class Employee{
     int getAge(){
         return Age;
     }
-    void IntroduceYourself()
+    void IntroduceYourself(){
+
+    }
+    Employee(string name, string company, int age){
+        Name = name;
+        Company = company;
+        Age = age;
+    }
 
 
 }
