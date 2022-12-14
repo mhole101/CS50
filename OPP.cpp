@@ -78,7 +78,7 @@ class Developer: Employee {
         FavProgrammingLanguage = favProgrammingLanguage;
     }
     void FixBug(){
-        std::cout<<getName()<<" fixed bug using " << FavprogrammingLanguage << std::endl;
+        std::cout<<getName()<<" fixed bug using " << FavProgrammingLanguage << std::endl;
     }
 
 };
@@ -99,6 +99,7 @@ int main()
     employee1.AskForPromotion();
     employee2.AskForPromotion();
 
-    Developer d = Developer("Matt", "Google", "23", "C++");
-
+    //Inherited class object
+    Developer d = Developer("Matt", "Google", 23, "C++");
+    d.FixBug();
 };
