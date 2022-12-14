@@ -8,6 +8,8 @@ class Employee{
     int Age;
 
     public:
+
+    // setter/getter = encapsulation
     // Name setter
     void setName(string name) {
         Name = name;
@@ -39,6 +41,7 @@ class Employee{
         std::cout << "Age - " << Age << std::endl;
 
     }
+    //constructor
     Employee(string name, string company, int age){
         Name = name;
         Company = company;
