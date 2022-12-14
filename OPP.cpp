@@ -66,6 +66,13 @@ class Employee:AbstractEmployee {
 
 
 };
+//Inheritance
+//Developer is child/sub/derived class
+//Employee is parent/
+
+class Developer: Employee {
+
+}:
 
 int main()
 {   //create Employee object employee1
