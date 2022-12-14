@@ -72,8 +72,13 @@ class Employee:AbstractEmployee {
 class Developer: Employee {
     public:
     string FavProgrammingLanguage;
-    Developer(){
-        
+    Developer(string name, string company, int age, string favProgrammingLanguage)
+    :Employee(name, company, age)
+    {
+        FavProgrammingLanguage = favProgrammingLanguage;
+    }
+    void FixBug(){
+        std::cout<<get.Name()<<" fixed bug using " << FavprogrammingLanguage << std::endl;
     }
 
 };
@@ -93,5 +98,7 @@ int main()
 
     employee1.AskForPromotion();
     employee2.AskForPromotion();
+
+    Developer d = Developer("Matt", "Google", "23", "C++");
 
 };
