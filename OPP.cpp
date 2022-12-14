@@ -34,6 +34,9 @@ class Employee{
         return Age;
     }
     void IntroduceYourself(){
+        std::cout << "Name - " << Name << std::endl;
+        std::cout << "Company - " << Company << std::endl;
+        std::cout << "Age - " << Age << std::endl;
 
     }
     Employee(string name, string company, int age){
