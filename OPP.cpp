@@ -46,10 +46,9 @@ class Employee{
     }
 
 
-}
+};
 
-void main(void)
-{
+int main(){
     Employee employee1;
     Employee employee2;
 
