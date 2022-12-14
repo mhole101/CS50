@@ -70,8 +70,10 @@ class Employee:AbstractEmployee {
 //Developer is child/sub/derived class
 //Employee is parent/base/super class
 class Developer: Employee {
+    public:
+    string FavProgrammingLanguage;
 
-}:
+};
 
 int main()
 {   //create Employee object employee1
