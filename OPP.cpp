@@ -48,8 +48,9 @@ class Employee{
 
 };
 
-int main(){
+int main()
+{
     Employee employee1;
     Employee employee2;
 
-}
+};
