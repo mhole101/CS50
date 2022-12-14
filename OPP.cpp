@@ -68,8 +68,7 @@ class Employee:AbstractEmployee {
 };
 //Inheritance
 //Developer is child/sub/derived class
-//Employee is parent/
-
+//Employee is parent/base/super class
 class Developer: Employee {
 
 }:
