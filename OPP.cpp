@@ -49,10 +49,16 @@ class Employee{
 };
 
 int main()
-{
+{   //create Employee object employee1
     Employee employee1 = Employee("Matt", "Grupo", 33);
-    Employee employee2 = Employee("Chuck", "Stelantis", 48);
     employee1.IntroduceYourself();
+
+    //create Employee object employee2
+    Employee employee2 = Employee("Chuck", "Stelantis", 48);
     employee2.IntroduceYourself();
+
+    //testing setAge method/function
+    employee1.setAge(34);
+    std::cout << employee1.getName() << " is " << employee1.getAge() << " years old." << std::endl;
 
 };
