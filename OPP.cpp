@@ -51,6 +51,9 @@ class Employee:AbstractEmployee {
         Company = company;
         Age = age;
     }
+    void AskForPromotion() {
+        
+    }
 
 
 };
