@@ -96,8 +96,10 @@ class Teacher:Employee {
     void PrepareLesson() {
         std::cout<< getName() << " is preparing " << Subject << " lesson" << std::endl;
     }
-    Teacher(string name, string company, int age, string subject) {
-
+    Teacher(string name, string company, int age, string subject)
+        :Employee(name, company, age)
+    {
+        Subject = subject;
     }
 };
 
@@ -121,4 +123,6 @@ int main()
     Developer d = Developer("Matt", "Google", 23, "C++");
     d.FixBug();
     d.AskForPromotion();
+
+    Teacher t = Teacher("Kelly", "MIT", 45, "CSS");
 };
