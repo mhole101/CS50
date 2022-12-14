@@ -72,6 +72,9 @@ class Employee:AbstractEmployee {
 class Developer: Employee {
     public:
     string FavProgrammingLanguage;
+    Developer(){
+        
+    }
 
 };
 
