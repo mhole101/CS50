@@ -78,7 +78,7 @@ class Developer: Employee {
         FavProgrammingLanguage = favProgrammingLanguage;
     }
     void FixBug(){
-        std::cout<<get.Name()<<" fixed bug using " << FavprogrammingLanguage << std::endl;
+        std::cout<<getName()<<" fixed bug using " << FavprogrammingLanguage << std::endl;
     }
 
 };
