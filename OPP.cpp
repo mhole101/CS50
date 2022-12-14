@@ -1,7 +1,11 @@
 #include <iostream>
 using std::string;
 
-class Employee{
+class AbstractEmployee {
+    virtual void AskForPromotion()=0;
+};
+
+class Employee:AbstractEmployee {
     private:
     string Name;
     string Company;
