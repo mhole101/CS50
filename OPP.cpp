@@ -89,7 +89,7 @@ class Developer:public Employee {
     }
 
 };
-/
+
 class Teacher:Employee {
     string Subject;
     void PrepareLesson() {
