@@ -91,11 +91,15 @@ class Developer:public Employee {
 };
 
 class Teacher:Employee {
+    public:
     string Subject;
     void PrepareLesson() {
         std::cout<< getName() << " is preparing " << Subject << " lesson" << std::endl;
     }
-}
+    Teacher(string name, string company, int age, string subject) {
+
+    }
+};
 
 int main()
 {   //create Employee object employee1
