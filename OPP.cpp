@@ -50,7 +50,9 @@ class Employee{
 
 int main()
 {
-    //Employee employee1 = Employee("Matt", "Grupo", 33);
-    //Employee employee2 = Employee("Chuck", "Stelantis", 48);
+    Employee employee1 = Employee("Matt", "Grupo", 33);
+    Employee employee2 = Employee("Chuck", "Stelantis", 48);
+    employee1.IntroduceYourself();
+    employee2.IntroduceYourself();
 
 };
