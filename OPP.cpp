@@ -50,7 +50,7 @@ class Employee{
 
 int main()
 {
-    Employee employee1;
-    Employee employee2;
+    Employee employee1 = Employee("Matt", "Grupo", 33);
+    Employee employee2 = Employee("Chuck", "Stelantis", 48);
 
 };
