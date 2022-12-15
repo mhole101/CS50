@@ -92,7 +92,7 @@ class Developer:public Employee {
     }
 
     void Work(){
-        std::cout<<Name<<" is checking email, task backlog, performing tasks..."<<std::endl;
+        std::cout<<Name<<" is writting "<< FavProgrammingLanguage << " code." << std::endl;
     }
 
 };
@@ -107,6 +107,10 @@ class Teacher:public Employee {
         :Employee(name, company, age)
     {
         Subject = subject;
+    }
+
+     void Work(){
+        std::cout<<Name<<" is writting "<< FavProgrammingLanguage << " code." << std::endl;
     }
 };
 
