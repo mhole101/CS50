@@ -91,6 +91,10 @@ class Developer:public Employee {
         std::cout<<Name<<" fixed bug using " << FavProgrammingLanguage << std::endl;
     }
 
+    void Work(){
+        std::cout<<Name<<" is checking email, task backlog, performing tasks..."<<std::endl;
+    }
+
 };
 
 class Teacher:public Employee {
