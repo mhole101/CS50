@@ -67,7 +67,7 @@ class Employee:AbstractEmployee {
             std::cout << Name << " sorry NO promotion for you!" << std::endl;
     }
 
-    void Work(){
+    virtual void Work(){
         std::cout<<Name<<" is checking email, task backlog, performing tasks..."<<std::endl;
     }
 
@@ -146,6 +146,7 @@ int main()
     // reference is used to used to refer to a child class object
     // A pointer of base class "e" can hold reference of derived
     // class object "&d"
+    // MUST make work a virtual method in parent class
     Employee* e1 =&d;
     Employee* e2 =&t;
 
