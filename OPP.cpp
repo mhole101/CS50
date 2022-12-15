@@ -90,9 +90,9 @@ class Developer:public Employee {
     void FixBug(){
         std::cout<<Name<<" fixed bug using " << FavProgrammingLanguage << std::endl;
     }
-
+    //polymorphism from employee
     void Work(){
-        std::cout<<Name<<" is writting "<< FavProgrammingLanguage << " code." << std::endl;
+        std::cout<<Name<<" is writing "<< FavProgrammingLanguage << " code." << std::endl;
     }
 
 };
@@ -108,7 +108,7 @@ class Teacher:public Employee {
     {
         Subject = subject;
     }
-
+    //polymorphism
      void Work(){
         std::cout<<Name<<" is teaching "<< Subject << std::endl;
     }
