@@ -144,9 +144,13 @@ int main()
 
     // The most common use of polymorphism is when a parent class
     // reference is used to used to refer to a child class object
+    // A pointer of base class "e" can hold reference of derived
+    // class object "&d"
+    Employee* e1 =&d;
+    Employee* e2 =&t;
 
-    Employee *e=&d;
-    Employee *e=&d;
+    e1->Work();
+    e2->Work();
 
 
 
