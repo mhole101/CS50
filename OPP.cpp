@@ -114,6 +114,9 @@ class Teacher:public Employee {
     }
 };
 
+// The most common use of polymorphism is when a parent class
+// reference is used to used to refer to a child class object
+
 int main()
 {   //create Employee object employee1
     Employee employee1 = Employee("Matt", "Grupo", 33);
