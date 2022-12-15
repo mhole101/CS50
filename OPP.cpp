@@ -147,6 +147,7 @@ int main()
     // A pointer of base class "e" can hold reference of derived
     // class object "&d"
     // MUST make work a virtual method in parent class
+    // When virtual
     Employee* e1 =&d;
     Employee* e2 =&t;
 
