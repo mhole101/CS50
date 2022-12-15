@@ -67,6 +67,9 @@ class Employee:AbstractEmployee {
             std::cout << Name << " sorry NO promotion for you!" << std::endl;
     }
 
+    void Work(){
+        std::cout<<Name<<" is checking email, task backlog, performing tasks..."<<std::endl;
+    }
 
 };
 //Inheritance
@@ -126,4 +129,7 @@ int main()
 
     Teacher t = Teacher("Kelly", "MIT", 45, "CSS");
     t.PrepareLesson();
+
+    d.Work();
+    t.Work();
 };
