@@ -110,7 +110,7 @@ class Teacher:public Employee {
     }
 
      void Work(){
-        std::cout<<Name<<" is writting "<< FavProgrammingLanguage << " code." << std::endl;
+        std::cout<<Name<<" is teaching "<< Subject << std::endl;
     }
 };
 
