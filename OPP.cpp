@@ -1,3 +1,7 @@
+//
+// Example taken from "Object Oriented Programming (OOP) in C++ Course"
+// https://www.youtube.com/watch?v=wN0x9eZLix4
+//
 #include <iostream>
 using std::string;
 
@@ -147,7 +151,11 @@ int main()
     // A pointer of base class "e" can hold reference of derived
     // class object "&d"
     // MUST make work a virtual method in parent class
-    // When virtual
+    // When virtual is invoked it says hey can you please check
+    // if there is implimentation of this function in my derived
+    // classes and if yes, execute that instead, if not,
+    // use parent class function
+    // It will use the most derived function
     Employee* e1 =&d;
     Employee* e2 =&t;
 
