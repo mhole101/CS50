@@ -125,4 +125,5 @@ int main()
     d.AskForPromotion();
 
     Teacher t = Teacher("Kelly", "MIT", 45, "CSS");
+    t.PrepareLesson();
 };
