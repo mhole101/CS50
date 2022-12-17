@@ -20,7 +20,7 @@ int main(void)
 {
     // while loop
     // loop runs one more time than y
-    //
+    // x set to y+1 after loop
     int x = 0;
     int y = get_int("enter a number between 1 and 4\n");
     while (x<=y)
@@ -31,8 +31,8 @@ int main(void)
     printf("out of while loop x is %i\n", x);
 
     // do-while loop
-    // loop runs one more time than y2
-    // loop
+    // loop runs one more time than y
+    // x2 set to y2+1 after loop
     int x2 = 0;
     int y2= get_int("enter a number between 1 and 4\n");
     do
