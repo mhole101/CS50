@@ -12,7 +12,7 @@ int main()
     cout << ptr << endl; // prints location of n
     cout << *ptr << endl; // * dereferences pointer
     *ptr=10;
-    cout << ptr << endl;
+    cout << *ptr << endl;
     cout << n << endl;
 
 
