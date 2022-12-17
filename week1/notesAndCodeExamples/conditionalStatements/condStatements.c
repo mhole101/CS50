@@ -78,7 +78,16 @@
 //      true    false
 //      false   true
 //
-//      
+// Relational operators
+//
+//  less than (x < y)
+//  less than than or equal to (x <= y)
+//  greater than (x > y)
+//  greater than than or equal to(x >= y)
+//  Equality (x == y)
+//  Inequality (x != y)
+//
+//
 
 //
 #include <stdio.h>
