@@ -1,5 +1,6 @@
 //
 //
+//pointers must be of the same type of variable it points to
 //
 #include <iostream>
 using namespace std;
