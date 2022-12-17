@@ -38,6 +38,48 @@
 //      int number = 17; // initialization
 //      char letter = 'H";
 //
+//  Arithmetic operators
+//
+//      add - +
+//      subtract - -
+//      multiply - *
+//      divide - /
+//
+//      % modulus - remainder when number on left is divided by number on right
+//      Ex: int m = 13 % 4; // m is now 1
+//
+//      Shorthand
+//
+//      x = x * 5;
+//      x *= 5; // x = x * 5;
+//
+//      incrementing or decrementing
+//
+//      X++; // increment x by 1
+//      x--; // decrement x by 1
+//
+// Boolean Expressions
+//
+//      Bool - true or false
+//      in c, every nonzero value is equivalent to true, and zero is false.
+//
+//  Logical operators
+//      AND (&&) - x && Y = true; all else false
+//
+//      OR (||) - at least one operand true.
+//        X     Y       (x || y)
+//        true  true    true
+//        true  false   true
+//        false true    true
+//        false false   fales
+//
+//      NOT (!) inverts value of its operand
+//      X       !x
+//      true    false
+//      false   true
+//
+//      
+
 //
 #include <stdio.h>
 #include <cs50.h>
