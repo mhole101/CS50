@@ -37,4 +37,11 @@ int main(void)
     }
     while (x2<=y2);
 
+    //for loop
+    int y3= get_int("enter a number between 1 and 4\n");
+    for (int i = 0; i < y3; i++)
+    {
+       printf("i is %i\n", i);
+    }
+
 }
