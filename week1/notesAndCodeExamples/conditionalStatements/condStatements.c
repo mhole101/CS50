@@ -159,7 +159,7 @@ int main(void)
 
     // ternary operator (?:)
     //
-    in
+    int x = ()
 
 
 
