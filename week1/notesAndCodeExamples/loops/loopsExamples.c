@@ -19,7 +19,8 @@
 int main(void)
 {
     // while loop
-    int x = 1;
+    //
+    int x = 0;
     int y = get_int("enter a number between 1 and 4\n");
     while (x<=y)
     {
@@ -28,7 +29,9 @@ int main(void)
     }
 
     // do-while loop
-    int x2 = 1;
+    // loop runs one more time than y2
+    // loop
+    int x2 = 0;
     int y2= get_int("enter a number between 1 and 4\n");
     do
     {
@@ -38,6 +41,7 @@ int main(void)
     while (x2<=y2);
 
     //for loop
+    // loop runs one more time than y3
     int y3= get_int("enter a number between 1 and 4\n");
     for (int i = 0; i <= y3; i++)
     {
