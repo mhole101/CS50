@@ -28,7 +28,8 @@ int main()
     char letter = 'a';
     printNumber(&number);
     printLetter(&letter);
-    print()
+    print(&number, 'i');
+    print(&letter, 'c');
 
     //system("pause>0"):
     return 0;
