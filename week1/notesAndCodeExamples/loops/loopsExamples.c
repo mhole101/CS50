@@ -18,5 +18,12 @@
 
 int main(void)
 {
+    // while loop
+    int x = 1;
+    int y = get_int("enter a number between 1 and 4\n");
+    while (x<y)
+    {
+        printf("x is %i\n", x);
+    }
 
 }
