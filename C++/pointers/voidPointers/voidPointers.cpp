@@ -19,7 +19,7 @@ void print(void*ptr, char type){
         case 'c':cout << *((char*)ptr) << endl;//handle char*
         break;
     }
-    cout <<  << endl;
+    
 }
 
 int main()
