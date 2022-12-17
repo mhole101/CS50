@@ -98,10 +98,69 @@
 int main(void)
 {
     printf("hello world!\n");
-    bool b1 = true;
 
     // conditionals (branches)
     // if
-    if ()
+    bool b1 = true;
+
+    if (b1 == true)
+    {
+        printf("b1 is true\n");
+    }
+
+     // if else
+    bool b2 = false;
+
+    if (b2 == true)
+    {
+        printf("b2 is true\n");
+    }
+    else
+    {
+        printf("b2 is false\n");
+    }
+
+       // if else if
+    int number = 7;
+
+    if ( number == 1)
+    {
+        printf("number is 1\n");
+    }
+    else if ( number == 2)
+    {
+        printf("number is 2\n");
+    }
+    else if ( number == 3)
+    {
+        printf("number is 3\n");
+    }
+    else
+    {
+        printf("number is NOT 1, 2 or 3\n");
+    }
+
+    //switch statement
+    int x = GetInt();
+    switch(x)
+    {
+        case 1:
+            printf("One!\n");
+            break;
+        case 1:
+            printf("One!\n");
+            break;
+        case 2:
+            printf("Two!\n");
+            break;
+        case 3:
+            printf("Three!\n");
+            break;
+        default:
+            printf("Not 1, 2 or 3!\n");
+    }
+
+
+
 
 }
