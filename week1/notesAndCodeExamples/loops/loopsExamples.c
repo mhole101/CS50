@@ -35,6 +35,6 @@ int main(void)
         printf("x2 is %i\n", x2);
         x2++;
     }
-    while (x2<y2);
+    while (x2<=y2);
 
 }
