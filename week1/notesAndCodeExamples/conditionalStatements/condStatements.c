@@ -157,6 +157,10 @@ int main(void)
             printf("Not 1, 2 or 3!\n");
     }
 
+    // ternary operator (?:)
+    //
+    in
+
 
 
 
