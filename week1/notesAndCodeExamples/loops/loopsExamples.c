@@ -19,6 +19,7 @@
 int main(void)
 {
     // while loop
+    // loop runs one more time than y
     //
     int x = 0;
     int y = get_int("enter a number between 1 and 4\n");
@@ -27,6 +28,7 @@ int main(void)
         printf("x is %i\n", x);
         x++;
     }
+    printf("out of while loop x is %i\n", x);
 
     // do-while loop
     // loop runs one more time than y2
@@ -39,6 +41,7 @@ int main(void)
         x2++;
     }
     while (x2<=y2);
+    printf("out of  do-while loop x2 is %i\n", x2);
 
     //for loop
     // loop runs one more time than y3
@@ -47,5 +50,6 @@ int main(void)
     {
        printf("i is %i\n", i);
     }
+    //printf("out of for loop i is %i\n", xi);
 
 }
