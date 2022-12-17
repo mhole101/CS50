@@ -14,6 +14,7 @@ int main()
     cout << luckyNumbers[2] << endl;
     cout << *(luckyNumbers+2) << endl; //
     cout << (luckyNumbers+2) << endl;
+    cout << &luckyNumbers[2] << endl;
 
 
     return 0;
