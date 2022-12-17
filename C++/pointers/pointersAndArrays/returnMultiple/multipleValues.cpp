@@ -37,6 +37,9 @@ int main()
     int numbers[5]={5,4,-2,29,6};
     cout << "Min is " << getMin(numbers, 5) << endl;
     cout << "Max is " << getMax(numbers, 5) << endl;
+    int min=numbers[0];
+    int max=numbers[0];
+    getMinAndMax(numbers, 5, &min, &max)
 
     return 0;
 }
