@@ -6,7 +6,7 @@ long getCreditCardNum(void);
 int main(void)
 {
 
-    creditCardNum = getCrediCardNum();
+    long creditCardNum = getCreditCardNum();
     printf("Number: %li\n",creditCardNum);
 }
 
