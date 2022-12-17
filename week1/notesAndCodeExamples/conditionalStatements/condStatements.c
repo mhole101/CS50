@@ -98,4 +98,10 @@
 int main(void)
 {
     printf("hello world!\n");
+    bool b1 = true;
+
+    // conditionals (branches)
+    // if
+    if ()
+
 }
