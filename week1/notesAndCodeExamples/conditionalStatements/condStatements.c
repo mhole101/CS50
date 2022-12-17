@@ -161,7 +161,7 @@ int main(void)
     //
     int y = 1;
     int z = (x > y) ? 5 : 6;
-    printf("string(z)\n");
+    printf(%i, &z);
 
 
 
