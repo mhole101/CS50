@@ -10,7 +10,7 @@ int main()
 {
     int luckNumbers[5] = {2,3,5,7,9};
     cout << luckNumbers << endl;
-    cout << &luckyNumbers[0] << endl;
+    //cout << &luckyNumbers[0] << endl;
 
     return 0;
 }
