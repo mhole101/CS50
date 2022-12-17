@@ -21,8 +21,13 @@ int main()
    int luckyNumbers[5];
 
    for (int i=0; i <= 4; i++){
-    cout << "Number: " << endl;
-    cin >> luckyNumbers[i];
+        cout << "Number: " << endl;
+        cin >> luckyNumbers[i];
+   }
+
+    for (int i=0; i <= 4; i++){
+        cout << luckyNumbers[i] << " ";
+        cin >>
    }
 
 
