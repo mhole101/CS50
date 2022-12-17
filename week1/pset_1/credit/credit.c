@@ -1,10 +1,17 @@
 #include <cs50.h>
 #include <stdio.h>
 
+long getCreditCardNum(void);
+
 int main(void)
 {
-    long creditCardNum = get_long("Number: ");
+
+    creditCardNum = getCrediCardNum();
     printf("Number: %li\n",creditCardNum);
 }
 
-long getCreditCardNum()
+long getCreditCardNum(void)
+{
+    long creditCardNum = get_long("Number: ");
+    return creditCardNum;
+}
