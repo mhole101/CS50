@@ -3,5 +3,8 @@
 
 int main(void)
 {
-    creditCardNum = get_long("Number: ");
+    long creditCardNum = get_long("Number: ");
+    printf("Number: %li\n",creditCardNum);
 }
+
+long getCreditCardNum()
