@@ -30,6 +30,7 @@ void getMinAndMax(int numbers[], int size, int* min, int* max){
         if(numbers[i] < *min)
             *min = numbers[i];
 }
+}
 
 int main()
 {
