@@ -141,7 +141,7 @@ int main(void)
     }
 
     //switch statement
-    int x = GetInt();
+    int x = 7;
     switch(x)
     {
         case 1:
