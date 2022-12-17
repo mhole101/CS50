@@ -1,5 +1,6 @@
 // void pointers
-//
+// content from "What is a void pointer?"
+// https://www.youtube.com/watch?v=mOPYyqSkPO0&list=PL43pGnjiVwgSSRlwfahAuIqoJ8TfDIlHq&index=2
 //
 //
 #include <iostream>

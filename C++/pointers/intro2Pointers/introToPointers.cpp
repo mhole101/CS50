@@ -1,4 +1,5 @@
-//
+// content from Introduction to C++ pointers
+// https://www.youtube.com/watch?v=eNofmKYzje4&list=PL43pGnjiVwgSSRlwfahAuIqoJ8TfDIlHq&index=1
 //
 //pointers must be of the same type of variable it points to
 //
