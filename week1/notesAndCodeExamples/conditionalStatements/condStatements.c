@@ -26,6 +26,19 @@
 //
 //      string - store series of characters; must use #include <cs50.h>
 //
+//      int number; //declaration
+//      number = 17;// assignment
+//      char letter;
+//      letter = 'H';
+//
+//      If you are simultaneously declaring and setting the value of a
+//      variable (sometimes called initializing) you can consolidate
+//      into one step
+//
+//      int number = 17; // initialization
+//      char letter = 'H";
+//
+//
 #include <stdio.h>
 #include <cs50.h>
 
