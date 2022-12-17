@@ -21,10 +21,20 @@ int main(void)
     // while loop
     int x = 1;
     int y = get_int("enter a number between 1 and 4\n");
-    while (x<y)
+    while (x<=y)
     {
         printf("x is %i\n", x);
         x++;
     }
+
+    // do-while loop
+    int x2 = 1;
+    int y2 2= get_int("enter a number between 1 and 4\n");
+    do
+    {
+        printf("x2 is %i\n", x2);
+        x2++;
+    }
+    while (x2<y2);
 
 }
