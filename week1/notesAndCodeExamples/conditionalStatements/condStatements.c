@@ -141,7 +141,7 @@ int main(void)
     }
 
     //switch statement
-    int x = 7;
+    int x = get_int("input number:\n");
     switch(x)
     {
         case 1:
@@ -161,7 +161,14 @@ int main(void)
     //
     int y = 1;
     int z = (x > y) ? 5 : 6;
-    printf(%i, &z);
+    
+    printf("z is %i\n", z); // must use place holders
+    //printf placeholders
+    // %c - char
+    // %f - float,double
+    // %i - int
+    // %li - long
+    // %s - string
 
 
 
