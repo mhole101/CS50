@@ -20,7 +20,7 @@ int getMax(int numbers[], int size){
         if(numbers[i] > max)
             max = numbers[i];
     }
-    return min;
+    return max;
 }
 
 int main()
