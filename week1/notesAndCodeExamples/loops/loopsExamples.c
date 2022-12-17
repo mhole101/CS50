@@ -29,7 +29,7 @@ int main(void)
 
     // do-while loop
     int x2 = 1;
-    int y2 2= get_int("enter a number between 1 and 4\n");
+    int y2= get_int("enter a number between 1 and 4\n");
     do
     {
         printf("x2 is %i\n", x2);
