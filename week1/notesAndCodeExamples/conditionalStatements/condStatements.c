@@ -158,10 +158,10 @@ int main(void)
     }
 
     // ternary operator (?:)
-    //
+    // very simple if else
     int y = 1;
     int z = (x > y) ? 5 : 6;
-    
+
     printf("z is %i\n", z); // must use place holders
     //printf placeholders
     // %c - char
