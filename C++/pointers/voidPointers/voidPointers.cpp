@@ -13,7 +13,13 @@ void printLetter(char* charPtr){
     cout << *charPtr << endl;
 }
 void print(void*ptr, char type){
-    
+    switch (type){
+        case 'i':cout << *((int*)ptr) << endl;//handle int*
+        break;
+        case 'c':cout << *((char*)ptr) << endl;//handle char*
+        break;
+    }
+    cout <<  << endl;
 }
 
 int main()
@@ -22,6 +28,7 @@ int main()
     char letter = 'a';
     printNumber(&number);
     printLetter(&letter);
+    print()
 
     //system("pause>0"):
     return 0;
