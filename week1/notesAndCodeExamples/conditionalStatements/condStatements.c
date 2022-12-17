@@ -7,5 +7,5 @@
 
 int main(void)
 {
-    p
+    printf("hello world!\n");
 }
