@@ -1,5 +1,5 @@
-//
-//
+// content from "Return multiple values from a function using pointers?"
+// https://www.youtube.com/watch?v=Q4qfmuV5yF8&list=PL43pGnjiVwgSSRlwfahAuIqoJ8TfDIlHq&index=6
 //
 //
 #include <iostream>
@@ -40,6 +40,8 @@ int main()
     int min=numbers[0];
     int max=numbers[0];
     getMinAndMax(numbers, 5, &min, &max);
+    cout << "min is " << min << endl;
+    cout << "max is " << max << endl;
 
     return 0;
 }
