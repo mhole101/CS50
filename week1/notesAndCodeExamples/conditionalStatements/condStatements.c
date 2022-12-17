@@ -159,7 +159,9 @@ int main(void)
 
     // ternary operator (?:)
     //
-    int x = ()
+    int y = 1;
+    int z = (x > y) ? 5 : 6;
+    printf(z);
 
 
 
