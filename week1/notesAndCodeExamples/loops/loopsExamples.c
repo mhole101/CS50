@@ -24,6 +24,7 @@ int main(void)
     while (x<y)
     {
         printf("x is %i\n", x);
+        x++;
     }
 
 }
