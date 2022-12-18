@@ -41,13 +41,18 @@ int main(void)
     }
     else if(creditCardLen == 15)
     {
-        //mastercardFirstDigitCheck
-        //  if(mastercardFirstDigitCheck == 1)
-        //      run alg
-        //          if alg = pass
-        //          result = "VISA\n";
-        //      else
-        //          results = "INVALID\n"
+        long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
+        printf("firstdigit: %li\n", firstDigit);
+        if(firstDigit == 3)
+        {
+            //alg
+            results = "AMEX\n";
+
+        }
+        else
+        {
+            results = "INVALID3\n";
+        }
     }
     else if (creditCardLen == 16)
     {
@@ -119,7 +124,19 @@ long getFirstDigit(long creditCardNum, int creditCardLen)
 
 long getSecondDigit(long creditCardNum, int creditCardLen)
 {
-    return 1;
+    int i = 0;
+    long secondDigit = 0;
+    while(creditCardNum)
+    {
+        if((creditCardLen - i) == 2)
+        {
+            printf("secondDigit: %li\n", creditCardNum);
+            secondDigit = creditCardNum;
+        }
+        creditCardNum /= 10;
+        i++;
+    }
+    return secondDigit;
 }
 
 bool visaCheck(int firstDigit)
