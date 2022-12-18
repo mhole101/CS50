@@ -37,8 +37,9 @@ int main(void)
         else
         {
             results = "INVALID\n";
+        }
     }
-    else if (creditCardLen == 15)
+    else if(creditCardLen == 15)
     {
         //mastercardFirstDigitCheck
         //  if(mastercardFirstDigitCheck == 1)
@@ -55,8 +56,10 @@ int main(void)
     else
     {
         results = "INVALID\n";
-        printf("%s", results);
     }
+
+    printf("%s", results);
+
     /*
     if(creditCardLen==13 || creditCardLen==15 || creditCardLen==16 )
     {
