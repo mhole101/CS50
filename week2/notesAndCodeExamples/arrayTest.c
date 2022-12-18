@@ -3,6 +3,8 @@
 
 long getCreditCardNum(void);
 int getCreditCardNumLen(long creditCardNum);
+bool luhnsAlgorithm(long creditCardNum, int creditCardLen);
+
 
 int main (void)
 {
@@ -32,4 +34,18 @@ int getCreditCardNumLen(long creditCardNum)
     }
 
     return creditCardLen;
+}
+
+bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
+{
+    int i = 1;
+    long creditCardArray[creditCardLen];
+    while(creditCardNum)
+    {
+        printf("%i:\n", i);
+        printf("  %li\n", creditCardNum % 10);
+        creditCardNum /= 10;
+        i++;
+    }
+    return true;
 }
