@@ -169,17 +169,17 @@ string masterCardCheck(long creditCardNum, int creditCardLen)
     {
         if(secondDigit >= 1 && secondDigit <= 7)
         {
-            return "MASTERCARD\N";
+            return "MASTERCARD\n";
         }
         else
         {
-            return "INVALID M1\N";
+            return "INVALID M1\n";
         }
 
     }
     else
     {
-        return "INVALID M2\N";
+        return "INVALID M2\n";
     }
 }
 
