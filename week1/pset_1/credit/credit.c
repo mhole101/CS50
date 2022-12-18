@@ -3,12 +3,12 @@
 
 long getCreditCardNum(void);
 int getCreditCardNumLen(long creditCardNum);
-int getFirstDigit(int creditCardNum, int creditCardLen);
-int getSecondDigit(int creditCardNum, int creditCardLen);
+int getFirstDigit(long creditCardNum, int creditCardLen);
+int getSecondDigit(long creditCardNum, int creditCardLen);
 bool visaCheck(int firstDigit);
 bool amexCheck(int firstDigit, int secondDigit);
 bool masterCardCheck(int firstDigit, int secondDigit);
-bool luhnsAlgorithm(int creditCardNum);
+bool luhnsAlgorithm(long creditCardNum);
 
 int main(void)
 {
@@ -26,6 +26,7 @@ int main(void)
     //Visa Check
     if(creditCardLen == 13)
     {
+        int getFirstDigit(long creditCardNum, int creditCardLen);
         //VisaFirstDigitCheck
             //if(visaFirstDigit == 1)
             //  run alg
@@ -92,7 +93,7 @@ int getCreditCardNumLen(long creditCardNum)
     return creditCardLen;
 }
 
-int getFirstDigit(int creditCardNum, int creditCardLen)
+int getFirstDigit(long creditCardNum, int creditCardLen)
 {
     int i = 0;
     while(creditCardNum)
@@ -110,7 +111,7 @@ int getFirstDigit(int creditCardNum, int creditCardLen)
 
 }
 
-int getSecondDigit(int creditCardNum, int creditCardLen)
+int getSecondDigit(long creditCardNum, int creditCardLen)
 {
     return 1;
 }
@@ -167,7 +168,7 @@ bool masterCardCheck(int firstDigit, int secondDigit)
     }
 }
 
-bool luhnsAlgorithm(int creditCardNum)
+bool luhnsAlgorithm(long creditCardNum)
 {
     return true;
 }
