@@ -51,7 +51,8 @@ int main(void)
     }
     else if (creditCardLen == 16)
     {
-
+        //Mastercard Check
+        results = masterCardCheck(creditCardNum, creditCardLen);
     }
     else
     {
@@ -152,7 +153,7 @@ string masterCardCheck(long creditCardNum, int creditCardLen)
 {
     long firstTwoDigits = getFirstTwoDigits(creditCardNum, creditCardLen);
     printf("firstTwoDigits: %li\n", firstTwoDigits);
-    if(firstTwoDigits >= 51 || firstTwoDigits <= 55)
+    if(firstTwoDigits >= 51 && firstTwoDigits <= 55)
     {
         return "MASTERCARD\n";
     }
