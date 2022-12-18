@@ -5,9 +5,7 @@ int getHeight;
 
 int main(void)
 {
-    int h =0;
-
-    h = getHeight();
+    int h = getHeight();
 
     for(int i =1; i <= h; i++) // moves along height
     {
@@ -41,7 +39,9 @@ int main(void)
 int getHeight(void){
      while(h<1 || h>8)
     {
+        int h = 0;
         h = get_int("Height (between 1 and 8): ");
     }
+    return h;
 
 }
