@@ -27,11 +27,14 @@ int main(void)
 
     if(creditCardLen == 13)
     {
-        //Visa Check
+        //Visa check
         results = visaCheck(creditCardNum, creditCardLen);
     }
     else if(creditCardLen == 15)
     {
+        //AMEX check
+        results = amexCheck(creditCardNum, creditCardLen);
+        /*
         long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
         printf("firstdigit: %li\n", firstDigit);
         if(firstDigit == 3)
@@ -44,6 +47,7 @@ int main(void)
         {
             results = "INVALID3\n";
         }
+        */
     }
     else if (creditCardLen == 16)
     {
