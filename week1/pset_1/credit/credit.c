@@ -37,9 +37,21 @@ int main(void)
     }
     else if (creditCardLen == 16)
     {
-        /
-        //Mastercard Check
-        results = masterCardCheck(creditCardNum, creditCardLen);
+        long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
+        //Check first digit
+        if(firstDigit == 4)
+        {
+            results = visaCheck(creditCardNum, creditCardLen);
+        }
+        else if(firsDigit == 5)
+        {
+            //Mastercard Check
+            results = masterCardCheck(creditCardNum, creditCardLen);
+        }
+        else
+        {
+            results = "INVALID3\n"
+        }
     }
     else
     {
