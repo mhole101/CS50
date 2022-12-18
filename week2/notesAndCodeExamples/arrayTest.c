@@ -3,7 +3,7 @@
 
 long getCreditCardNum(void);
 int getCreditCardNumLen(long creditCardNum);
-long fillArray(long numToArray, int numLen)[];
+//long fillArray(long numToArray, int numLen)[];
 bool luhnsAlgorithm(long creditCardNum, int creditCardLen);
 
 
@@ -38,6 +38,7 @@ int getCreditCardNumLen(long creditCardNum)
     return creditCardLen;
 }
 
+/*
 long fillArray(long numToArray, int numLen)[]
 {
     int i = 0;
@@ -51,6 +52,7 @@ long fillArray(long numToArray, int numLen)[]
         i++;
     }
 }
+*/
 
 bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
 {
