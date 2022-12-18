@@ -78,7 +78,8 @@ bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
         creditCardNum /= 10;
         i++;
     }
-    i = 0;
+
+    for(int i = 0; i < credit)
     while(i < creditCardLen)
     {
         printf("creditCardArray[%i]:", i);
