@@ -27,7 +27,7 @@ int main(void)
     if(creditCardLen == 13)
     {
         long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
-        printf("firstdigit: %li\n", creditCardNum);
+        printf("firstdigit: %li\n", firstDigit);
         if(firstDigit == 4)
         {
             //alg
