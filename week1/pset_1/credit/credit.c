@@ -127,6 +127,7 @@ long getSecondDigit(long creditCardNum, int creditCardLen)
         {
             printf("secondDigit: %li\n", creditCardNum);
             secondDigit = creditCardNum;
+            break;
         }
         creditCardNum /= 10;
         i++;
