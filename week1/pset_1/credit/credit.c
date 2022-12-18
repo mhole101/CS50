@@ -26,7 +26,7 @@ int main(void)
     //Visa Check
     if(creditCardLen == 13)
     {
-        int firstDigit = getFirstDigit(long creditCardNum, int creditCardLen);
+        int firstDigit = getFirstDigit(creditCardNum, creditCardLen);
         printf("firstDigit() ran: %i\n", firstDigit);
         //VisaFirstDigitCheck
             //if(visaFirstDigit == 1)
