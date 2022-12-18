@@ -3,8 +3,8 @@
 
 long getCreditCardNum(void);
 int getCreditCardNumLen(long creditCardNum);
-int getFirstDigit(int creditCardNum);
-int getSecondDigit(int creditCardNum);
+int getFirstDigit(int creditCardNum, int creditCardLen);
+int getSecondDigit(int creditCardNum, int creditCardLen);
 bool visaCheck(int firstDigit);
 bool amexCheck(int firstDigit, int secondDigit);
 bool masterCardCheck(int firstDigit, int secondDigit);
@@ -92,13 +92,13 @@ int getCreditCardNumLen(long creditCardNum)
     return creditCardLen;
 }
 
-int getFirstDigit(int creditCardNum)
+int getFirstDigit(int creditCardNum, int creditCardLen)
 {
     return 1;
 
 }
 
-int getSecondDigit(int creditCardNum)
+int getSecondDigit(int creditCardNum, int creditCardLen)
 {
     return 1;
 }
