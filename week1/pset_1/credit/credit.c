@@ -156,11 +156,20 @@ string amexCheck(long creditCardNum, int creditCardLen)
 {
 
     long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
-    printf("firstdigit: %li\n", firstDigit);
+    long secondDigit = getSecondDigit(creditCardNum, creditCardLen);
+    printf("firstDigit: %li\n", firstDigit);
+    printf("secondDigit: %li\n", secondDigit);
     if(firstDigit == 3)
     {
-        //alg
-        return "AMEX\n";
+        if(secondDigit == 4 || secondDigit == 7)
+        {
+            //alg
+            return "AMEX\n";
+        }
+        else
+        {
+            return "INVALID A2\n";
+        }
      }
      else
      {
@@ -172,8 +181,8 @@ string masterCardCheck(long creditCardNum, int creditCardLen)
 {
     long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
     long secondDigit = getSecondDigit(creditCardNum, creditCardLen);
-    printf("firstdigit: %li\n", firstDigit);
-    printf("seconddigit: %li\n", secondDigit);
+    printf("firstDigit: %li\n", firstDigit);
+    printf("secondDigit: %li\n", secondDigit);
     if(firstDigit == 5)
     {
         if(secondDigit >= 1 && secondDigit <= 7)
