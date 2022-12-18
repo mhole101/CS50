@@ -17,13 +17,8 @@ int main (void)
     long creditCardArray[creditCardLen];
     int arraySize = sizeof creditCardArray / sizeof *creditCardArray;
     printf("arraySize: %i\n", arraySize);
-    //bool pass = luhnsAlgorithm(creditCardNum, creditCardLen);
-    for(int i = 0; i < 7; i++)
-    {
-        int odd = oddNum(i);
-        printf("%i mod 2 = : ", i);
-        printf("%i\n", odd);
-    }
+    bool pass = luhnsAlgorithm(creditCardNum, creditCardLen);
+
 
 }
 
