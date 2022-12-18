@@ -43,14 +43,14 @@ int main(void)
         {
             results = visaCheck(creditCardNum, creditCardLen);
         }
-        else if(firsDigit == 5)
+        else if(firstDigit == 5)
         {
             //Mastercard Check
             results = masterCardCheck(creditCardNum, creditCardLen);
         }
         else
         {
-            results = "INVALID3\n"
+            results = "INVALID3\n";
         }
     }
     else
