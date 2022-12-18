@@ -5,7 +5,7 @@ long getCreditCardNum(void);
 int getCreditCardNumLen(long creditCardNum);
 long getFirstDigit(long creditCardNum, int creditCardLen);
 long getFirstTwoDigits(long creditCardNum, int creditCardLen);
-bool luhnsAlgorithm(long creditCardNum);
+bool luhnsAlgorithm(long creditCardNum, int creditCardLen);
 string visaCheck(long creditCardNum, int creditCardLen);
 string amexCheck(long creditCardNum, int creditCardLen);
 string masterCardCheck(long creditCardNum, int creditCardLen);
@@ -114,10 +114,10 @@ long getFirstTwoDigits(long creditCardNum, int creditCardLen)
     return secondDigit;
 }
 
-bool luhnsAlgorithm(long creditCardNum)
+bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
 {
     int i = 1;
-    int 
+    int
     while(creditCardNum)
     {
         printf("%i:\n", i);
