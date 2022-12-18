@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 long getCreditCardNum(void);
+int getCreditCardNumLen(long creditCardNum);
 
 int main(void)
 {
@@ -9,8 +10,10 @@ int main(void)
     long creditCardNum = getCreditCardNum();
     printf("Number: %li\n",creditCardNum);
 
-    int i = 0;
+    int creditCardLen = getCreditCardNumLen(long creditCardNum);
+    printf("Credit Card Length: %i\n", creditCardLen);
 
+    /*
     while(creditCardNum)
     {
 
@@ -19,10 +22,23 @@ int main(void)
         i++;
     }
      printf("i = %i\n", i);
+     */
 }
 
 long getCreditCardNum(void)
 {
     long creditCardNum = get_long("Number: ");
     return creditCardNum;
+}
+
+int getCreditCardNumLen(long creditCardNum)
+{
+    int creditCardLen = 0;
+     while(creditCardNum)
+    {
+        creditCardNum /= 10;
+        creditCardLen++;
+    }
+
+    return creditCardLen;
 }
