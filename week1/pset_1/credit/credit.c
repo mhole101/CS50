@@ -139,7 +139,7 @@ string visaCheck(long creditCardNum, int creditCardLen)
     }
     else
     {
-        return "INVALID7\n";
+        return "INVALID V1\n";
     }
 }
 
@@ -155,14 +155,16 @@ string amexCheck(long creditCardNum, int creditCardLen)
      }
      else
      {
-        return "INVALID3\n";
+        return "INVALID A1\n";
      }
 }
 
 string masterCardCheck(long creditCardNum, int creditCardLen)
 {
     long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
+    long secondDigit = getSecondDigit(creditCardNum, creditCardLen);
     printf("firstdigit: %li\n", firstDigit);
+    printf("seconddigit: %li\n", secondDigit);
     if(firstDigit == 5)
     {
         if(secondDigit >= 1 && secondDigit <= 7)
@@ -171,13 +173,13 @@ string masterCardCheck(long creditCardNum, int creditCardLen)
         }
         else
         {
-            return "INVALID\N";
+            return "INVALID M1\N";
         }
 
     }
     else
     {
-        return "INVALID\N";
+        return "INVALID M2\N";
     }
 }
 
