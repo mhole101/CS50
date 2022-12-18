@@ -20,7 +20,7 @@ int main(void)
     if(creditCardLen == 13)
     {
         //VisaFirstDigitCheck
-            //if(visaFirstDigit == 4)
+            //if(visaFirstDigit == 1)
             //  run alg
             //      if alg = pass
             //          result = "VISA\n";
@@ -30,6 +30,7 @@ int main(void)
     else if (creditCardLen == 15)
     {
         //mastercardFirstDigitCheck
+        //  if(mastercardFirstDigitCheck == 1)
     }
     /*
     if(creditCardLen==13 || creditCardLen==15 || creditCardLen==16 )
