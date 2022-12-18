@@ -38,13 +38,21 @@ int getCreditCardNumLen(long creditCardNum)
 
 bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
 {
-    int i = 1;
+    int i = 0;
     long creditCardArray[creditCardLen];
     while(creditCardNum)
     {
         printf("%i:\n", i);
         printf("  %li\n", creditCardNum % 10);
+        creditCardArray[i] = creditCardNum % 10;
         creditCardNum /= 10;
+        i++;
+    }
+    i = 0;
+    while(i < creditCardLen)
+    {
+        printf("creditCardArray[%i]:" i);
+        printf(" %li\n", creditCardArray[i]);
         i++;
     }
     return true;
