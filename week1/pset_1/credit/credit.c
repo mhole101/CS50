@@ -117,7 +117,7 @@ long getFirstTwoDigits(long creditCardNum, int creditCardLen)
 bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
 {
     int i = 1;
-    //int
+    long creditCardArray[creditCardLen];
     while(creditCardNum)
     {
         printf("%i:\n", i);
@@ -134,7 +134,7 @@ string visaCheck(long creditCardNum, int creditCardLen)
     long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
     if(firstDigit == 4)
     {
-        valid = luhnsAlgorithm(creditCardNum);
+        valid = luhnsAlgorithm(creditCardNum, creditCardLen);
         return "VISA\n";
     }
     else
