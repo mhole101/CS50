@@ -27,7 +27,8 @@ int main(void)
     if(creditCardLen == 13)
     {
         int firstDigit = getFirstDigit(creditCardNum, creditCardLen);
-        printf("firstDigit() ran: %i\n", firstDigit);
+        //printf("firstDigit() ran: %i\n", firstDigit);
+        
         //VisaFirstDigitCheck
             //if(visaFirstDigit == 1)
             //  run alg
