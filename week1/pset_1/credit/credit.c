@@ -37,6 +37,7 @@ int main(void)
     }
     else if (creditCardLen == 16)
     {
+        /
         //Mastercard Check
         results = masterCardCheck(creditCardNum, creditCardLen);
     }
