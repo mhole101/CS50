@@ -3,8 +3,8 @@
 
 long getCreditCardNum(void);
 int getCreditCardNumLen(long creditCardNum);
-int getFirstDigit(creditCardNum);
-int getSecondDigit(creditCardNum);
+int getFirstDigit(int creditCardNum);
+int getSecondDigit(int creditCardNum);
 
 int main(void)
 {
@@ -88,32 +88,54 @@ int getCreditCardNumLen(long creditCardNum)
     return creditCardLen;
 }
 
-int getFirstDigit(creditCardNum)
+int getFirstDigit(int creditCardNum)
 {
 
 }
 
-int getSecondDigit(creditCardNum)
+int getSecondDigit(int creditCardNum)
 {
 
 }
 
-string visaCheck()
+bool visaCheck(int firstDigit)
 {
-
+    if(firstDigit == 4)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
-string amexCheck()
+bool amexCheck(int creditCardNum)
 {
-
+    if(firstDigit == 3)
+    {
+        if(secondDigit == 4 || secondDigit == 7)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+        
+    }
+    else
+    {
+        return false;
+    }
 }
 
-string masterCardCheck()
+string masterCardCheck(int creditCardNum)
 {
-
+    return "MC\n";
 }
 
-bool luhnsAlgorithm()
+bool luhnsAlgorithm(int creditCardNum)
 {
-    
+    return true;
 }
