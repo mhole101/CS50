@@ -34,20 +34,6 @@ int main(void)
     {
         //AMEX check
         results = amexCheck(creditCardNum, creditCardLen);
-        /*
-        long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
-        printf("firstdigit: %li\n", firstDigit);
-        if(firstDigit == 3)
-        {
-            //alg
-            results = "AMEX\n";
-
-        }
-        else
-        {
-            results = "INVALID3\n";
-        }
-        */
     }
     else if (creditCardLen == 16)
     {
