@@ -8,6 +8,12 @@ int main(void)
 
     long creditCardNum = getCreditCardNum();
     printf("Number: %li\n",creditCardNum);
+
+    while(creditCardNum)
+    {
+        printf("%li\n", creditCardNum % 10);
+        creditCardNum /= 10;
+    }
 }
 
 long getCreditCardNum(void)
