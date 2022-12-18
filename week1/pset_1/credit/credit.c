@@ -7,8 +7,11 @@ int getCreditCardNumLen(long creditCardNum);
 int main(void)
 {
 
+    \\Prompt user for creditcard number
     long creditCardNum = getCreditCardNum();
     printf("Number: %li\n",creditCardNum);
+
+    //Get credit card len
 
     int creditCardLen = getCreditCardNumLen(creditCardNum);
     printf("Credit Card Length: %i\n", creditCardLen);
