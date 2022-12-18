@@ -82,6 +82,7 @@ bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
     long everyOtherArray[sizeOfEveryOtherArray];
     int eOArrayIndex = 0;
 
+    //Creates everyOtherArray
     for(int k = 0; k < sizeOfCreditCardArray; k++ )
     {
         if(oddNum(k))
