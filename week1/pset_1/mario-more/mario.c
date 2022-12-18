@@ -5,13 +5,14 @@ int getHeight(void);
 
 int main(void)
 {
+    //prompt user for height
     int h = getHeight();
 
     for(int i =1; i <= h; i++) // moves along height
     {
        int null = h-i;
-       int blocks =i;
-       while(null>0) // prints first stairs emplty spaces
+       int blocks = i;
+       while(null>0) // prints first stairs empty spaces
        {
         printf(" ");
         null--;
@@ -37,9 +38,9 @@ int main(void)
 }
 
 int getHeight(void){
+     int h = 0;
      while(h<1 || h>8)
     {
-        int h = 0;
         h = get_int("Height (between 1 and 8): ");
     }
     return h;
