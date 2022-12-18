@@ -10,7 +10,7 @@ int main(void)
     long creditCardNum = getCreditCardNum();
     printf("Number: %li\n",creditCardNum);
 
-    int creditCardLen = getCreditCardNumLen(long creditCardNum);
+    int creditCardLen = getCreditCardNumLen(creditCardNum);
     printf("Credit Card Length: %i\n", creditCardLen);
 
     /*
