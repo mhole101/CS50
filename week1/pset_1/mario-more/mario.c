@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 int getHeight(void);
+void printEmptySpaces(int spaces);
 
 int main(void)
 {
@@ -10,13 +11,10 @@ int main(void)
 
     for(int i =1; i <= h; i++) // moves along height
     {
-       int null = h-i;
+       int spaces = h-i;
        int blocks = i;
-       while(null>0) // prints first stairs empty spaces
-       {
-        printf(" ");
-        null--;
-       }
+       printEmptySpaces(spaces);
+
        while(blocks>0) // prints first stairs blocks
        {
         printf("#");
@@ -37,7 +35,8 @@ int main(void)
 
 }
 
-int getHeight(void){
+int getHeight(void)
+{
      int h = 0;
      while(h<1 || h>8)
     {
@@ -45,4 +44,13 @@ int getHeight(void){
     }
     return h;
 
+}
+
+void printEmptySpaces(int spaces)
+{
+    while(spaces>0)
+       {
+        printf(" ");
+        spaces--;
+       }
 }
