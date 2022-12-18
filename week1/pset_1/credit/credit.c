@@ -161,6 +161,8 @@ string amexCheck(long creditCardNum, int creditCardLen)
 
 string masterCardCheck(long creditCardNum, int creditCardLen)
 {
+    long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
+    printf("firstdigit: %li\n", firstDigit);
     if(firstDigit == 5)
     {
         if(secondDigit >= 1 && secondDigit <= 7)
