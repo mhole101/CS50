@@ -7,6 +7,8 @@ int getFirstDigit(int creditCardNum);
 int getSecondDigit(int creditCardNum);
 bool visaCheck(int firstDigit);
 bool amexCheck(int firstDigit, int secondDigit);
+bool masterCardCheck(int firstDigit, int secondDigit);
+bool luhnsAlgorithm(int creditCardNum);
 
 int main(void)
 {
@@ -92,6 +94,7 @@ int getCreditCardNumLen(long creditCardNum)
 
 int getFirstDigit(int creditCardNum)
 {
+    
 
 }
 
