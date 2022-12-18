@@ -15,6 +15,7 @@ int main (void)
     long creditCardArray[creditCardLen];
     int arraySize = sizeof creditCardArray / sizeof *creditCardArray;
     printf("arraySize: %i\n", arraySize);
+    bool pass = luhnsAlgorithm(creditCardNum, creditCardLen);
 
 }
 
@@ -51,7 +52,7 @@ bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
     i = 0;
     while(i < creditCardLen)
     {
-        printf("creditCardArray[%i]:" i);
+        printf("creditCardArray[%i]:", i);
         printf(" %li\n", creditCardArray[i]);
         i++;
     }
