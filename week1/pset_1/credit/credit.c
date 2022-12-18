@@ -134,6 +134,11 @@ long getSecondDigit(long creditCardNum, int creditCardLen)
     return secondDigit;
 }
 
+bool luhnsAlgorithm(long creditCardNum)
+{
+    return true;
+}
+
 string visaCheck(long creditCardNum, int creditCardLen)
 {
     long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
@@ -187,7 +192,3 @@ string masterCardCheck(long creditCardNum, int creditCardLen)
     }
 }
 
-bool luhnsAlgorithm(long creditCardNum)
-{
-    return true;
-}
