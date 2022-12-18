@@ -3,8 +3,8 @@
 
 long getCreditCardNum(void);
 int getCreditCardNumLen(long creditCardNum);
-int getFirstDigit(long creditCardNum, int creditCardLen);
-int getSecondDigit(long creditCardNum, int creditCardLen);
+long getFirstDigit(long creditCardNum, int creditCardLen);
+long getSecondDigit(long creditCardNum, int creditCardLen);
 bool visaCheck(int firstDigit);
 bool amexCheck(int firstDigit, int secondDigit);
 bool masterCardCheck(int firstDigit, int secondDigit);
@@ -26,8 +26,8 @@ int main(void)
     //Visa Check
     if(creditCardLen == 13)
     {
-        int firstDigit = getFirstDigit(creditCardNum, creditCardLen);
-        //printf("firstDigit() ran: %i\n", firstDigit);
+        long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
+        printf("firstdigit: %li\n", creditCardNum);
         if(firstDigit == 4)
         {
             //alg
@@ -99,25 +99,25 @@ int getCreditCardNumLen(long creditCardNum)
     return creditCardLen;
 }
 
-int getFirstDigit(long creditCardNum, int creditCardLen)
+long getFirstDigit(long creditCardNum, int creditCardLen)
 {
     int i = 0;
+    long firstDigit = 0;
     while(creditCardNum)
     {
         if((creditCardLen - i) == 1)
         {
             printf("firstdigit: %li\n", creditCardNum);
+            firstDigit = creditCardNum;
         }
-
-        //printf("%li\n", creditCardNum % 10);
         creditCardNum /= 10;
         i++;
     }
-    return 1;
+    return firstDigit;
 
 }
 
-int getSecondDigit(long creditCardNum, int creditCardLen)
+long getSecondDigit(long creditCardNum, int creditCardLen)
 {
     return 1;
 }
