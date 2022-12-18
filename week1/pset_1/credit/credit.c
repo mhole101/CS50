@@ -59,26 +59,6 @@ int main(void)
     }
 
     printf("%s", results);
-
-    /*
-    if(creditCardLen==13 || creditCardLen==15 || creditCardLen==16 )
-    {
-        printf("Pass!\n");
-    }
-    else
-    {
-        printf("Fail!\n");
-    }
-    printf("Number: %li\n",creditCardNum);
-
-    while(creditCardNum)
-    {
-
-        printf("%li\n", creditCardNum % 10);
-        creditCardNum /= 10;
-
-    }
-     */
 }
 
 long getCreditCardNum(void)
@@ -156,49 +136,29 @@ string visaCheck(long creditCardNum, int creditCardLen)
 string amexCheck(long creditCardNum, int creditCardLen)
 {
 
-    long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
-    long secondDigit = getSecondDigit(creditCardNum, creditCardLen);
-    printf("firstDigit: %li\n", firstDigit);
-    printf("secondDigit: %li\n", secondDigit);
-    if(firstDigit == 3)
+    long firstTwoDigits = getFirstTwoDigits(creditCardNum, creditCardLen);
+    printf("firstTwoDigits: %li\n", firstTwoDigits);
+    if(firstTwoDigits == 34 || firstTwoDigits == 37)
     {
-        if(secondDigit == 4 || secondDigit == 7)
-        {
-            //alg
-            return "AMEX\n";
-        }
-        else
-        {
-            return "INVALID A2\n";
-        }
-     }
-     else
-     {
+        return "AMEX\n";
+    }
+    else
+    {
         return "INVALID A1\n";
-     }
+    }
 }
 
 string masterCardCheck(long creditCardNum, int creditCardLen)
 {
-    long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
-    long secondDigit = getSecondDigit(creditCardNum, creditCardLen);
-    printf("firstDigit: %li\n", firstDigit);
-    printf("secondDigit: %li\n", secondDigit);
-    if(firstDigit == 5)
+    long firstTwoDigits = getFirstTwoDigits(creditCardNum, creditCardLen);
+    printf("firstTwoDigits: %li\n", firstTwoDigits);
+    if(firstTwoDigits >= 51 || firstTwoDigits <= 55)
     {
-        if(secondDigit >= 1 && secondDigit <= 7)
-        {
-            return "MASTERCARD\n";
-        }
-        else
-        {
-            return "INVALID M1\n";
-        }
-
+        return "MASTERCARD\n";
     }
     else
     {
-        return "INVALID M2\n";
+        return "INVALID M1\n";
     }
 }
 
