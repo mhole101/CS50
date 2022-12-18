@@ -4,7 +4,7 @@
 long getCreditCardNum(void);
 int getCreditCardNumLen(long creditCardNum);
 long getFirstDigit(long creditCardNum, int creditCardLen);
-long getSecondDigit(long creditCardNum, int creditCardLen);
+long getFirstTwoDigits(long creditCardNum, int creditCardLen);
 bool luhnsAlgorithm(long creditCardNum);
 string visaCheck(long creditCardNum, int creditCardLen);
 string amexCheck(long creditCardNum, int creditCardLen);
@@ -117,7 +117,7 @@ long getFirstDigit(long creditCardNum, int creditCardLen)
 
 }
 
-long getSecondDigit(long creditCardNum, int creditCardLen)
+long getFirstTwoDigits(long creditCardNum, int creditCardLen)
 {
     int i = 0;
     long secondDigit = 0;
