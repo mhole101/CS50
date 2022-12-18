@@ -94,13 +94,13 @@ int getCreditCardNumLen(long creditCardNum)
 
 int getFirstDigit(int creditCardNum)
 {
-    
+    return 1;
 
 }
 
 int getSecondDigit(int creditCardNum)
 {
-
+    return 1;
 }
 
 bool visaCheck(int firstDigit)
