@@ -7,7 +7,7 @@ int getCreditCardNumLen(long creditCardNum);
 int main(void)
 {
 
-    \\Prompt user for creditcard number
+    //Prompt user for creditcard number
     long creditCardNum = getCreditCardNum();
     printf("Number: %li\n",creditCardNum);
 
@@ -15,15 +15,23 @@ int main(void)
     int creditCardLen = getCreditCardNumLen(creditCardNum);
     printf("Credit Card Length: %i\n", creditCardLen);
 
+    //Check credit card length for pass/fail
+    if(creditCardLen==13 || creditCardLen==15 || creditCardLen==13 )
+    {
+        printf("Pass!\n");
+    }
+    else
+    {
+        printf("Fail!\n");
+    }
     /*
     while(creditCardNum)
     {
 
         printf("%li\n", creditCardNum % 10);
         creditCardNum /= 10;
-        i++;
+
     }
-     printf("i = %i\n", i);
      */
 }
 
