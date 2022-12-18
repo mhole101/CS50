@@ -41,8 +41,8 @@ int main(void)
 
 int getHeight(void)
 {
-     int h = 0;
-     while(h<1 || h>8)
+    int h = 0;
+    while(h<1 || h>8)
     {
         h = get_int("Height (between 1 and 8): ");
     }
@@ -53,19 +53,19 @@ int getHeight(void)
 void printEmptySpaces(int spaces)
 {
     while(spaces>0)
-       {
+    {
         printf(" ");
         spaces--;
-       }
+    }
 }
 
 void printBlocks(int blocks)
 {
     while(blocks>0)
-       {
+    {
         printf("#");
         blocks--;
-       }
+    }
 }
 
 void printSpacesBetweenStairs(int stairsGap)
