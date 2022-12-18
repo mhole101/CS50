@@ -128,9 +128,11 @@ bool luhnsAlgorithm(long creditCardNum)
 
 string visaCheck(long creditCardNum, int creditCardLen)
 {
+    bool valid = false;
     long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
     if(firstDigit == 4)
     {
+        valid = luhnsAlgorithm(creditCardNum);
         return "VISA\n";
     }
     else
