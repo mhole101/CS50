@@ -4,7 +4,7 @@
 long getCreditCardNum(void);
 int getCreditCardNumLen(long creditCardNum);
 //long fillArray(long numToArray, int numLen)[];
-bool oddNum(int num);
+int oddNum(int num);
 bool luhnsAlgorithm(long creditCardNum, int creditCardLen);
 
 
@@ -20,9 +20,9 @@ int main (void)
     //bool pass = luhnsAlgorithm(creditCardNum, creditCardLen);
     for(int i = 0; i < 7; i++)
     {
-        bool odd = oddNum(i);
-        printf("i = %i: ", i);
-        printf("%b\n", odd);
+        int odd = oddNum(i);
+        printf("%i; mod 2 = : ", i);
+        printf("%i\n", odd);
     }
 
 }
@@ -61,17 +61,9 @@ long fillArray(long numToArray, int numLen)[]
 }
 */
 
-bool oddNum(int num)
+int oddNum(int num)
 {
-    int returnNum = num % 2;
-    if(returnNum)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+    return = num % 2;
 }
 
 bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
