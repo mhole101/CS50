@@ -57,7 +57,7 @@ int main(void)
         printf("Fail!\n");
     }
     printf("Number: %li\n",creditCardNum);
-    /*
+
     while(creditCardNum)
     {
 
