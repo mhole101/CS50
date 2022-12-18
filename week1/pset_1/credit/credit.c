@@ -36,7 +36,7 @@ int main(void)
         }
         else
         {
-            results = "INVALID\n";
+            results = "INVALID1\n";
         }
     }
     else if(creditCardLen == 15)
@@ -55,7 +55,7 @@ int main(void)
     }
     else
     {
-        results = "INVALID\n";
+        results = "INVALID2\n";
     }
 
     printf("%s", results);
