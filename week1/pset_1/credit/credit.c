@@ -5,7 +5,7 @@ long getCreditCardNum(void);
 int getCreditCardNumLen(long creditCardNum);
 long getFirstDigit(long creditCardNum, int creditCardLen);
 long getSecondDigit(long creditCardNum, int creditCardLen);
-bool visaCheck(int firstDigit);
+string visaCheck(long creditCardNum, int creditCardLen);
 bool amexCheck(int firstDigit, int secondDigit);
 bool masterCardCheck(int firstDigit, int secondDigit);
 bool luhnsAlgorithm(long creditCardNum);
@@ -26,6 +26,8 @@ int main(void)
     //Visa Check
     if(creditCardLen == 13)
     {
+        results = string visaCheck(creditCardNum, creditCardLen);
+        /*
         long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
         printf("firstdigit: %li\n", firstDigit);
         if(firstDigit == 4)
@@ -38,6 +40,7 @@ int main(void)
         {
             results = "INVALID1\n";
         }
+        */
     }
     else if(creditCardLen == 15)
     {
@@ -139,15 +142,16 @@ long getSecondDigit(long creditCardNum, int creditCardLen)
     return secondDigit;
 }
 
-bool visaCheck(int firstDigit)
+string visaCheck(long creditCardNum, int creditCardLen)
 {
+    long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
     if(firstDigit == 4)
     {
-        return true;
+        return "VISA\n";
     }
     else
     {
-        return false;
+        return "INVALID7\n";
     }
 }
 
