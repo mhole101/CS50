@@ -21,7 +21,7 @@ int main (void)
     for(int i = 0; i < 7; i++)
     {
         int odd = oddNum(i);
-        printf("%i; mod 2 = : ", i);
+        printf("%i mod 2 = : ", i);
         printf("%i\n", odd);
     }
 
