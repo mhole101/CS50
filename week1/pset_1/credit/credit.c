@@ -28,14 +28,15 @@ int main(void)
     {
         int firstDigit = getFirstDigit(creditCardNum, creditCardLen);
         //printf("firstDigit() ran: %i\n", firstDigit);
-        
-        //VisaFirstDigitCheck
-            //if(visaFirstDigit == 1)
-            //  run alg
-            //      if alg = pass
-            //          result = "VISA\n";
-            //      else
-            //          results = "INVALID\n"
+        if(firstDigit == 4)
+        {
+            //alg
+            results = "VISA\n";
+
+        }
+        else
+        {
+            results = "INVALID\n";
     }
     else if (creditCardLen == 15)
     {
