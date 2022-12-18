@@ -63,7 +63,7 @@ long fillArray(long numToArray, int numLen)[]
 
 int oddNum(int num)
 {
-    return = num % 2;
+    return num % 2;
 }
 
 bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
