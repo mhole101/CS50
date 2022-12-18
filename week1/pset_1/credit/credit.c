@@ -116,6 +116,11 @@ long getFirstTwoDigits(long creditCardNum, int creditCardLen)
 
 bool luhnsAlgorithm(long creditCardNum)
 {
+    while(creditCardNum)
+    {
+        printf("%li\n", creditCardNum % 10);
+        creditCardNum /= 10;
+    }
     return true;
 }
 
