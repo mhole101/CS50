@@ -122,6 +122,7 @@ bool luhnsAlgorithm(long creditCardNum)
         printf("%i:\n", i);
         printf("  %li\n", creditCardNum % 10);
         creditCardNum /= 10;
+        i++;
     }
     return true;
 }
