@@ -1,14 +1,13 @@
 #include <cs50.h>
 #include <stdio.h>
 
+int getHeight;
+
 int main(void)
 {
     int h =0;
-    while(h<1 || h>8)
-    {
-        h = get_int("Height (between 1 and 8): ");
-    }
 
+    h = getHeight();
 
     for(int i =1; i <= h; i++) // moves along height
     {
@@ -36,5 +35,13 @@ int main(void)
 
     }
 
+
+}
+
+int getHeight(void){
+     while(h<1 || h>8)
+    {
+        h = get_int("Height (between 1 and 8): ");
+    }
 
 }
