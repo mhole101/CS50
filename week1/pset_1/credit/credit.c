@@ -97,3 +97,23 @@ int getSecondDigit(creditCardNum)
 {
 
 }
+
+string visaCheck()
+{
+
+}
+
+string amexCheck()
+{
+
+}
+
+string masterCardCheck()
+{
+
+}
+
+bool luhnsAlgorithm()
+{
+    
+}
