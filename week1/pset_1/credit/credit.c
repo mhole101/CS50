@@ -50,7 +50,7 @@ int main(void)
         }
         else
         {
-            results = "INVALID3\n";
+            results = "INVALID\n";
         }
     }
     else
