@@ -24,7 +24,6 @@ int main(void)
     printf("Credit Card Length: %i\n", creditCardLen);
 
     //Check credit card length for pass/fail
-
     if(creditCardLen == 13)
     {
         //Visa check
