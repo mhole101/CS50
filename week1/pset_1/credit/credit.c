@@ -6,6 +6,8 @@ int getCreditCardNumLen(long creditCardNum);
 int getFirstDigit(int creditCardNum);
 int getSecondDigit(int creditCardNum);
 
+bool amexCheck(int firstDigit, int secondDigit)
+
 int main(void)
 {
     string results = "NOPE";
@@ -110,7 +112,7 @@ bool visaCheck(int firstDigit)
     }
 }
 
-bool amexCheck(int creditCardNum)
+bool amexCheck(int firstDigit, int secondDigit)
 {
     if(firstDigit == 3)
     {
@@ -122,7 +124,7 @@ bool amexCheck(int creditCardNum)
         {
             return false;
         }
-        
+
     }
     else
     {
