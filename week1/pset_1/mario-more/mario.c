@@ -3,30 +3,34 @@
 
 int getHeight(void);
 void printEmptySpaces(int spaces);
+void printBlocks(int blocks);
+void printSpacesBetweenStairs(int stairsGap);
 
 int main(void)
 {
     //prompt user for height
     int h = getHeight();
 
+    int stairsGap = 2;
+
     for(int i =1; i <= h; i++) // moves along height
     {
        int spaces = h-i;
        int blocks = i;
+
+       //Prints first staircase
        printEmptySpaces(spaces);
 
-       while(blocks>0) // prints first stairs blocks
-       {
-        printf("#");
-        blocks--;
-       }
-       printf("  "); // prints spaces between stairs
-       blocks =i;
-       while(blocks>0) // prints second stairs blocks
-       {
-        printf("#");
-        blocks--;
-       }
+       //Prints first staircase
+       printBlocks(blocks);
+
+       //Prints spaces between stairs
+       printSpacesBetweenStairs(stairsGap);
+
+       //Prints second staircase
+       printBlocks(blocks);
+
+       //Prints return for next level
        printf("\n");
 
 
@@ -53,4 +57,22 @@ void printEmptySpaces(int spaces)
         printf(" ");
         spaces--;
        }
+}
+
+void printBlocks(int blocks)
+{
+    while(blocks>0)
+       {
+        printf("#");
+        blocks--;
+       }
+}
+
+void printSpacesBetweenStairs(int stairsGap)
+{
+    while(stairsGap>0)
+    {
+        printf(" ");
+        stairsGap--;
+    }
 }
