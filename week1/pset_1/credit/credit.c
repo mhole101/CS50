@@ -11,8 +11,7 @@ int main(void)
     long creditCardNum = getCreditCardNum();
     printf("Number: %li\n",creditCardNum);
 
-    //Get credit card len
-
+    //Get credit card length
     int creditCardLen = getCreditCardNumLen(creditCardNum);
     printf("Credit Card Length: %i\n", creditCardLen);
 
