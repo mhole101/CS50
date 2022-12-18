@@ -143,7 +143,7 @@ string visaCheck(long creditCardNum, int creditCardLen)
     }
 }
 
-string amexCheck(long creditCardNum, int creditCardLen);
+string amexCheck(long creditCardNum, int creditCardLen)
 {
 
     long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
