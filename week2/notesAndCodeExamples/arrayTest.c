@@ -11,7 +11,7 @@ int main (void)
     printf("creditCardNum: %li\n", creditCardNum);
     printf("creditCardLen: %i\n", creditCardLen);
     long creditCardArray[creditCardLen];
-    long arraySize = sizeof creditCardArray;
+    long arraySize = sizeof creditCardArray / sizeof *creditCardArray;
     printf("arraySize: %li\n", arraySize);
 
 }
