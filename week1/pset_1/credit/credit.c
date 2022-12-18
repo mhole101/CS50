@@ -151,34 +151,32 @@ string amexCheck(long creditCardNum, int creditCardLen)
     if(firstDigit == 3)
     {
         //alg
-        results = "AMEX\n";
+        return "AMEX\n";
      }
      else
      {
-        results = "INVALID3\n";
+        return "INVALID3\n";
      }
-     return results;
 }
 
-string masterCardCheck(long creditCardNum, int creditCardLen);
+string masterCardCheck(long creditCardNum, int creditCardLen)
 {
     if(firstDigit == 5)
     {
         if(secondDigit >= 1 && secondDigit <= 7)
         {
-            return true;
+            return "MASTERCARD\N";
         }
         else
         {
-            return false;
+            return "INVALID\N";
         }
 
     }
     else
     {
-        return false;
+        return "INVALID\N";
     }
-    return results;
 }
 
 bool luhnsAlgorithm(long creditCardNum)
