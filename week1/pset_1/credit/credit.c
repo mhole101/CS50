@@ -3,6 +3,8 @@
 
 long getCreditCardNum(void);
 int getCreditCardNumLen(long creditCardNum);
+int getFirstDigit(creditCardNum);
+int getSecondDigit(creditCardNum);
 
 int main(void)
 {
@@ -84,4 +86,14 @@ int getCreditCardNumLen(long creditCardNum)
     }
 
     return creditCardLen;
+}
+
+int getFirstDigit(creditCardNum)
+{
+
+}
+
+int getSecondDigit(creditCardNum)
+{
+
 }
