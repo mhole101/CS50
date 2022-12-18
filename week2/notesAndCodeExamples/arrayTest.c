@@ -80,12 +80,14 @@ bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
     printf("sizeOfEveryOtherArray: %i\n", sizeOfEveryOtherArray);
     //declares everyotherarray
     long everyOtherArray[sizeOfEveryOtherArray];
+    int eOArrayIndex = 0;
 
     for(int k = 0; k < sizeOfCreditCardArray; k++ )
     {
         if(oddNum(k))
         {
-            everyOther
+            everyOtherArray[eOArrayIndex] = creditCardArray[k];
+            eOArrayIndex++;
         }
     }
 
@@ -95,6 +97,13 @@ bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
     {
         printf("creditCardArray[%i]:", j);
         printf(" %li\n", creditCardArray[j]);
+    }
+
+      //Prints out array
+    for(int l = 0; l < sizeOfEveryOtherArray; l++)
+    {
+        printf("everyOtherArray[%i]:", l);
+        printf(" %li\n", everyOtherArray[l]);
     }
 
     // USE > than 10 while iterating through array to determine if number is larger than 9 (1 digit)
