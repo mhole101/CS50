@@ -22,25 +22,12 @@ int main(void)
     int creditCardLen = getCreditCardNumLen(creditCardNum);
     printf("Credit Card Length: %i\n", creditCardLen);
 
-    //Check credit card length for pass/fai
-    //Visa Check
+    //Check credit card length for pass/fail
+
     if(creditCardLen == 13)
     {
+        //Visa Check
         results = visaCheck(creditCardNum, creditCardLen);
-        /*
-        long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
-        printf("firstdigit: %li\n", firstDigit);
-        if(firstDigit == 4)
-        {
-            //alg
-            results = "VISA\n";
-
-        }
-        else
-        {
-            results = "INVALID1\n";
-        }
-        */
     }
     else if(creditCardLen == 15)
     {
