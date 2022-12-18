@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int getHeight;
+int getHeight(void);
 
 int main(void)
 {
