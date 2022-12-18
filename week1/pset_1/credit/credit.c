@@ -94,16 +94,17 @@ int getCreditCardNumLen(long creditCardNum)
 
 int getFirstDigit(int creditCardNum, int creditCardLen)
 {
-    int i = 1;
+    int i = 0;
     while(creditCardNum)
     {
+        if((creditCardLen - i) == 1)
+        {
+            printf("firstdigit: %li\n", creditCardNum);
+        }
 
         //printf("%li\n", creditCardNum % 10);
         creditCardNum /= 10;
-        if()
-
-
-
+        i++;
     }
     return 1;
 
