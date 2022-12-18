@@ -67,13 +67,13 @@ bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
     long creditCardArray[creditCardLen];
     while(creditCardNum)
     {
-        printf("%i:\n", i);
-        printf("  %li\n", creditCardNum % 10);
+        //Loads CC number into array starting with last number
         creditCardArray[i] = creditCardNum % 10;
         creditCardNum /= 10;
         i++;
     }
 
+    //Prints out array
     for(int j = 0; j < creditCardLen; j++)
     {
         printf("creditCardArray[%i]:", j);
