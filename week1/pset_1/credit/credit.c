@@ -15,7 +15,17 @@ int main(void)
     int creditCardLen = getCreditCardNumLen(creditCardNum);
     printf("Credit Card Length: %i\n", creditCardLen);
 
-    //Check credit card length for pass/fail
+    //Check credit card length for pass/fai
+    //Visa Check
+    if(creditCardLen==13)
+    {
+        //VisaFirstDigitCheck
+            //if(visaFirstDigit == 4)
+            //  run alg
+            //      if alg = pass
+            //          result = VISA
+    }
+    /*
     if(creditCardLen==13 || creditCardLen==15 || creditCardLen==16 )
     {
         printf("Pass!\n");
