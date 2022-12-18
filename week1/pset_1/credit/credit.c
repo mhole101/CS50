@@ -6,6 +6,7 @@ int getCreditCardNumLen(long creditCardNum);
 
 int main(void)
 {
+    string results = "NOPE";
 
     //Prompt user for creditcard number
     long creditCardNum = getCreditCardNum();
@@ -24,13 +25,27 @@ int main(void)
             //  run alg
             //      if alg = pass
             //          result = "VISA\n";
-            //      esle
+            //      else
             //          results = "INVALID\n"
     }
     else if (creditCardLen == 15)
     {
         //mastercardFirstDigitCheck
         //  if(mastercardFirstDigitCheck == 1)
+        //      run alg
+        //          if alg = pass
+        //          result = "VISA\n";
+        //      else
+        //          results = "INVALID\n"
+    }
+    else if (creditCardLen == 16)
+    {
+
+    }
+    else
+    {
+        results = "INVALID\n";
+        printf("%s", results);
     }
     /*
     if(creditCardLen==13 || creditCardLen==15 || creditCardLen==16 )
