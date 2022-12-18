@@ -80,6 +80,8 @@ bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
         printf(" %li\n", creditCardArray[j]);
     }
 
+    // USE > than 10 while iterating through array to determine if number is larger than 9 (1 digit)
+
     return true;
 }
 
