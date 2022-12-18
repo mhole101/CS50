@@ -18,7 +18,7 @@ int main(void)
         creditCardNum /= 10;
         i++;
     }
-     printf("i = %i/", i);
+     printf("i = %i\n", i);
 }
 
 long getCreditCardNum(void)
