@@ -20,6 +20,10 @@ int main (void)
     printf("arraySize: %i\n", arraySize);
     //bool pass = luhnsAlgorithm(creditCardNum, creditCardLen);
     bool pass = luhnsAlg(creditCardNum);
+    if(pass)
+    {
+        printf("YES\n");
+    }
 
 
 }
