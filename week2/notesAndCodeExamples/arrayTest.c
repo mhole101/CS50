@@ -134,8 +134,10 @@ bool luhnsAlg(long creditCardNum)
         //Loads CC number into array starting with last number
         temp = creditCardNum % 10;
         creditCardNum /= 10;
-        //i++;
+        
     }
+
+    return true;
 }
 
 
