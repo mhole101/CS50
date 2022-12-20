@@ -81,7 +81,7 @@ bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
     }
 
     int sum = 0;
-    int multTwoSum;
+    int multTwoSum = 0;
 
 
     for(int k = 0; k < creditCardLen; k++ )
