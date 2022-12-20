@@ -73,7 +73,10 @@ bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
         i++;
     }
 
+    int sum = 0;
     
+
+
 
     //Puts size of CC array in variable
     int sizeOfCreditCardArray = sizeof creditCardArray / sizeof *creditCardArray;
