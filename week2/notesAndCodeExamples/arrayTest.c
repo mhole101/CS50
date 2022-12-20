@@ -139,10 +139,10 @@ bool luhnsAlg(long creditCardNum)
 
     while(creditCardNum)
     {
-        //moves last digit of CC number into temp
+        //Moves last digit of CC number into temp
         temp = creditCardNum % 10;
 
-        //Used to select between everyother number
+        //Select between everyother number
         if(i%2)
         {
             multTwoSum = temp * 2;
