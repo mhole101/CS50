@@ -179,7 +179,7 @@ string visaCheck(long creditCardNum, int creditCardLen)
     long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
     if(firstDigit == 4)
     {
-        valid = luhnsAlgorithm(creditCardNum, creditCardLen);
+        valid = luhnsAlg(creditCardNum);
         return "VISA\n";
     }
     else
