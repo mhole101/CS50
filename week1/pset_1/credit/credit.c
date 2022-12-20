@@ -179,8 +179,15 @@ string visaCheck(long creditCardNum, int creditCardLen)
     long firstDigit = getFirstDigit(creditCardNum, creditCardLen);
     if(firstDigit == 4)
     {
-        valid = luhnsAlg(creditCardNum);
-        return "VISA\n";
+        if(luhnsAlg(creditCardNum))
+        {
+            return "VISA\n";
+        }
+        else
+        {
+            return "INVALID V2\n";
+        }
+
     }
     else
     {
@@ -195,7 +202,14 @@ string amexCheck(long creditCardNum, int creditCardLen)
     printf("firstTwoDigits: %li\n", firstTwoDigits);
     if(firstTwoDigits == 34 || firstTwoDigits == 37)
     {
-        return "AMEX\n";
+        if(luhnsAlg(creditCardNum))
+        {
+            return "AMEX\n";
+        }
+        else
+        {
+            return "INVALID A2\n";
+        }
     }
     else
     {
@@ -209,7 +223,14 @@ string masterCardCheck(long creditCardNum, int creditCardLen)
     printf("firstTwoDigits: %li\n", firstTwoDigits);
     if(firstTwoDigits >= 51 && firstTwoDigits <= 55)
     {
-        return "MASTERCARD\n";
+        if(luhnsAlg(creditCardNum))
+        {
+            return "MASTERCARD\n";
+        }
+        else
+        {
+            return "INVALID M2\n";
+        }
     }
     else
     {
