@@ -195,7 +195,6 @@ string amexCheck(long creditCardNum, int creditCardLen)
 {
 
     long firstTwoDigits = getFirstTwoDigits(creditCardNum, creditCardLen);
-    printf("firstTwoDigits: %li\n", firstTwoDigits);
     if(firstTwoDigits == 34 || firstTwoDigits == 37)
     {
         if(luhnsAlg(creditCardNum))
@@ -216,7 +215,6 @@ string amexCheck(long creditCardNum, int creditCardLen)
 string masterCardCheck(long creditCardNum, int creditCardLen)
 {
     long firstTwoDigits = getFirstTwoDigits(creditCardNum, creditCardLen);
-    printf("firstTwoDigits: %li\n", firstTwoDigits);
     if(firstTwoDigits >= 51 && firstTwoDigits <= 55)
     {
         if(luhnsAlg(creditCardNum))
