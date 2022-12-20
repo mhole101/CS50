@@ -86,6 +86,7 @@ bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
 
     for(int k = 0; k < creditCardLen; k++ )
     {
+        printf("sum: %i\n", sum);
         //Indexes through every other
         if(oddNum(k))
         {
