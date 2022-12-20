@@ -84,7 +84,6 @@ long getFirstDigit(long creditCardNum, int creditCardLen)
     {
         if((creditCardLen - i) == 1)
         {
-            printf("firstdigit: %li\n", creditCardNum);
             firstDigit = creditCardNum;
         }
         creditCardNum /= 10;
@@ -97,19 +96,18 @@ long getFirstDigit(long creditCardNum, int creditCardLen)
 long getFirstTwoDigits(long creditCardNum, int creditCardLen)
 {
     int i = 0;
-    long secondDigit = 0;
+    long firstTwoDigits = 0;
     while(creditCardNum)
     {
         if((creditCardLen - i) == 2)
         {
-            printf("secondDigit: %li\n", creditCardNum);
-            secondDigit = creditCardNum;
+            firstTwoDigits = creditCardNum;
             break;
         }
         creditCardNum /= 10;
         i++;
     }
-    return secondDigit;
+    return firstTwoDigits;
 }
 
 bool luhnsAlg(long creditCardNum)
