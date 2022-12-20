@@ -19,7 +19,7 @@ int main (void)
     int arraySize = sizeof creditCardArray / sizeof *creditCardArray;
     printf("arraySize: %i\n", arraySize);
     //bool pass = luhnsAlgorithm(creditCardNum, creditCardLen);
-    bool pass = luhnsAlg(long creditCardNum);
+    bool pass = luhnsAlg(creditCardNum);
 
 
 }
