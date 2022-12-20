@@ -5,7 +5,7 @@ long getCreditCardNum(void);
 int getCreditCardNumLen(long creditCardNum);
 long getFirstDigit(long creditCardNum, int creditCardLen);
 long getFirstTwoDigits(long creditCardNum, int creditCardLen);
-bool luhnsAlgorithm(long creditCardNum, int creditCardLen);
+bool luhnsAlg(long creditCardNum);
 string visaCheck(long creditCardNum, int creditCardLen);
 string amexCheck(long creditCardNum, int creditCardLen);
 string masterCardCheck(long creditCardNum, int creditCardLen);
@@ -114,18 +114,63 @@ long getFirstTwoDigits(long creditCardNum, int creditCardLen)
     return secondDigit;
 }
 
-bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
+bool luhnsAlg(long creditCardNum)
 {
-    int i = 1;
-    long creditCardArray[creditCardLen];
+    int temp;
+    int sum = 0;
+    int multTwoSum;
+    int i = 0;
+
     while(creditCardNum)
     {
-        printf("%i:\n", i);
-        printf("  %li\n", creditCardNum % 10);
+        //Moves last digit of CC number into temp
+        temp = creditCardNum % 10;
+
+        //Select between everyother number
+        if(i%2)
+        {
+            multTwoSum = temp * 2;
+            //if multTwoSum > 9 parse number and add to sum
+            if(multTwoSum > 9)
+            {
+                int multTwoSumTemp;
+                while(multTwoSum)
+                {
+                    //Puts last digit of multTwoSum into multTwoSumTemp
+                    multTwoSumTemp = multTwoSum % 10;
+                    multTwoSum /= 10;
+                    sum += multTwoSumTemp;
+                }
+            }
+            else
+            {
+                //adds multTwoSum to sume if 9 or less
+                sum += multTwoSum;
+            }
+        }
+        else
+        {
+            //adds numbers from cc not multiplied by two
+            sum += temp;
+        }
+
+        //removes last number from card when done with it
         creditCardNum /= 10;
         i++;
+
     }
-    return true;
+
+    int lastDigitOfSum = sum % 10;
+
+    if(lastDigitOfSum)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+
 }
 
 string visaCheck(long creditCardNum, int creditCardLen)
