@@ -52,7 +52,7 @@ int main(void)
     }
     else
     {
-        results = "INVALID2\n";
+        results = "INVALID\n";
     }
 
     printf("%s", results);
@@ -187,7 +187,7 @@ string visaCheck(long creditCardNum, int creditCardLen)
     }
     else
     {
-        return "INVALID V1\n";
+        return "INVALID\n";
     }
 }
 
