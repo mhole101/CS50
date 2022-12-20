@@ -132,7 +132,8 @@ bool luhnsAlg(long creditCardNum)
     int multTwoSum;
     int multTwoSumTemp;
     int i = 0;
-     while(creditCardNum)
+
+    while(creditCardNum)
     {
         //moves last digit of CC number into temp
         temp = creditCardNum % 10;
@@ -164,20 +165,21 @@ bool luhnsAlg(long creditCardNum)
         else
         {
             //adds digits not multiplied by two
-            sum += creditCardArray[k];
+            sum += temp;
         }
-    }
 
+        creditCardNum /= 10;
+        i++;
+
+    }
     printf("sum: %i\n", sum);
 
-
-////////
-        creditCardNum /= 10;
-
-    }
-
     return true;
+
 }
+
+
+
 
 
 
