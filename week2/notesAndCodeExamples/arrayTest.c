@@ -118,6 +118,8 @@ bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
         }
     }
 
+    printf("sum: %i\n", sum);
+
 
 
     /*
