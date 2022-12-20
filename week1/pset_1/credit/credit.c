@@ -208,7 +208,7 @@ string amexCheck(long creditCardNum, int creditCardLen)
     }
     else
     {
-        return "INVALID A1\n";
+        return "INVALID\n";
     }
 }
 
