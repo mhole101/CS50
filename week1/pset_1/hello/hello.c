@@ -3,6 +3,7 @@
 
 int main(void)
 {
+    //Prompts user for name
     string name = get_string("What's your name?\n");
     printf("hello, %s\n", name);
 }
