@@ -84,19 +84,42 @@ bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
     int multTwoSum;
 
 
-    for(int k = 0; k < sizeOfCreditCardArray; k++ )
+    for(int k = 0; k < creditCardLen; k++ )
     {
+        //Indexes through every other
         if(oddNum(k))
         {
             multTwoSum = creditCardArray[k] * 2;
             printf("multTwoSum: %i\n", multTwoSum);
+
+            if(multTwoSum > 9)
+            {
+                while(multTwoSum)
+                {
+                    //Loads CC number into array starting with last number
+                    creditCardArray[i] = creditCardNum % 10;
+                    creditCardNum /= 10;
+                    i++;
+                }
+            }
+            else
+            {
+                //adds multTwoSum if 9 or less
+                sum += multTwoSum;
+            }
+        }
+        else
+        {
+            //adds digits not multiplied by two
+            sum += creditCardArray[k];
+            printf("sum: %i\n", sum);
         }
     }
 
 
 
     /*
-    
+
     //determines size of eveyother array for declaration
     int sizeOfEveryOtherArray = sizeOfCreditCardArray/2;
     printf("sizeOfEveryOtherArray: %i\n", sizeOfEveryOtherArray);
