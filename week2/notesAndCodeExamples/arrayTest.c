@@ -94,12 +94,15 @@ bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
 
             if(multTwoSum > 9)
             {
+                int multTwoSumTemp;
                 while(multTwoSum)
                 {
+
                     //Loads CC number into array starting with last number
-                    creditCardArray[i] = creditCardNum % 10;
-                    creditCardNum /= 10;
-                    i++;
+                    multTwoSumTemp = multTwoSum % 10;
+                    multTwoSum /= 10;
+                    printf("multTwoSumTemp: %i:\n", multTwoSumTemp);
+                    sum += multTwoSumTemp;
                 }
             }
             else
