@@ -173,9 +173,16 @@ bool luhnsAlg(long creditCardNum)
     }
 
     printf("sum: %i\n", sum);
-    
-
-    return true;
+    int lastDigitOfSum = sum % 10;
+    printf("lastDigitOfSum: %i\n", lastDigitOfSum);
+    if(lastDigitOfSum)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
 
 }
 
