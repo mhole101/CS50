@@ -58,12 +58,15 @@ int main(void)
     printf("%s", results);
 }
 
+//Gets credit card number from user
 long getCreditCardNum(void)
 {
+    //Prompts user for credit card number
     long creditCardNum = get_long("Number: ");
     return creditCardNum;
 }
 
+//Takes CC number and returns CC number length
 int getCreditCardNumLen(long creditCardNum)
 {
     int creditCardLen = 0;
@@ -76,6 +79,7 @@ int getCreditCardNumLen(long creditCardNum)
     return creditCardLen;
 }
 
+//Gets the first digit from CC number
 long getFirstDigit(long creditCardNum, int creditCardLen)
 {
     int i = 0;
@@ -93,6 +97,7 @@ long getFirstDigit(long creditCardNum, int creditCardLen)
 
 }
 
+//Gets first two digits from CC number
 long getFirstTwoDigits(long creditCardNum, int creditCardLen)
 {
     int i = 0;
@@ -110,6 +115,7 @@ long getFirstTwoDigits(long creditCardNum, int creditCardLen)
     return firstTwoDigits;
 }
 
+//Performs Luhn's Algorithm on CC number
 bool luhnsAlg(long creditCardNum)
 {
     int temp;
@@ -156,6 +162,7 @@ bool luhnsAlg(long creditCardNum)
 
     }
 
+    //Gets last digit from sum
     int lastDigitOfSum = sum % 10;
 
     if(lastDigitOfSum)
@@ -169,6 +176,7 @@ bool luhnsAlg(long creditCardNum)
 
 }
 
+//Checks for valid visa CC number
 string visaCheck(long creditCardNum, int creditCardLen)
 {
     bool valid = false;
@@ -212,6 +220,7 @@ string amexCheck(long creditCardNum, int creditCardLen)
     }
 }
 
+//Checks for valid mastercard CC number
 string masterCardCheck(long creditCardNum, int creditCardLen)
 {
     long firstTwoDigits = getFirstTwoDigits(creditCardNum, creditCardLen);
