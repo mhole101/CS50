@@ -173,6 +173,7 @@ bool luhnsAlg(long creditCardNum)
     }
 
     printf("sum: %i\n", sum);
+    
 
     return true;
 
