@@ -181,7 +181,7 @@ string visaCheck(long creditCardNum, int creditCardLen)
         }
         else
         {
-            return "INVALID V2\n";
+            return "INVALID\n";
         }
 
     }
