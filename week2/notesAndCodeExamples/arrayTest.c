@@ -138,12 +138,11 @@ bool luhnsAlg(long creditCardNum)
         //moves last digit of CC number into temp
         temp = creditCardNum % 10;
 
-        /////
-        if(oddNum(i))
+        //Used to select between everyother number
+        if(i%2)
         {
             multTwoSum = temp * 2;
-            printf("multTwoSum: %i\n", multTwoSum);
-
+            //if multTwoSum > 9 parse number and add to sum
             if(multTwoSum > 9)
             {
                 int multTwoSumTemp;
@@ -152,22 +151,22 @@ bool luhnsAlg(long creditCardNum)
                     //Puts last digit of multTwoSum into multTwoSumTemp
                     multTwoSumTemp = multTwoSum % 10;
                     multTwoSum /= 10;
-                    printf("multTwoSumTemp: %i:\n", multTwoSumTemp);
                     sum += multTwoSumTemp;
                 }
             }
             else
             {
-                //adds multTwoSum if 9 or less
+                //adds multTwoSum to sume if 9 or less
                 sum += multTwoSum;
             }
         }
         else
         {
-            //adds digits not multiplied by two
+            //adds numbers from cc not multiplied by two
             sum += temp;
         }
 
+        //removes last number from card when done with it
         creditCardNum /= 10;
         i++;
 
