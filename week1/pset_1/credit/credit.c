@@ -228,7 +228,7 @@ string masterCardCheck(long creditCardNum, int creditCardLen)
     }
     else
     {
-        return "INVALID M1\n";
+        return "INVALID\n";
     }
 }
 
