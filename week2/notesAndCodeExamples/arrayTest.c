@@ -127,12 +127,14 @@ bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
 
 bool luhnsAlg(long creditCardNum)
 {
+    int temp;
+    int sum;
      while(creditCardNum)
     {
         //Loads CC number into array starting with last number
-        creditCardArray[i] = creditCardNum % 10;
+        temp = creditCardNum % 10;
         creditCardNum /= 10;
-        i++;
+        //i++;
     }
 }
 
