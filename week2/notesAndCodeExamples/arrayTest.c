@@ -129,12 +129,16 @@ bool luhnsAlg(long creditCardNum)
 {
     int temp;
     int sum;
+    int i = 0;
      while(creditCardNum)
     {
-        //Loads CC number into array starting with last number
+        //moves last digit of CC number into temp
         temp = creditCardNum % 10;
-        creditCardNum /= 10;
         
+
+
+        creditCardNum /= 10;
+
     }
 
     return true;
