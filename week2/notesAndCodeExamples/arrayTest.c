@@ -115,7 +115,6 @@ bool luhnsAlgorithm(long creditCardNum, int creditCardLen)
         {
             //adds digits not multiplied by two
             sum += creditCardArray[k];
-            printf("sum: %i\n", sum);
         }
     }
 
