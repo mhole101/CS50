@@ -4,5 +4,5 @@
 int main(int argc, string argv[])
 {
     printf("argc: %i\n", argc);
-    printf("%s\n", argv);
+    //printf("%s\n", argv[]);
 }
