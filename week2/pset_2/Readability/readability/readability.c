@@ -27,14 +27,17 @@ int main(void)
     int sentences = count_sentences(text);
     printf("%i sentences\n", sentences);
 
+    // Average number of letter per 100 words
+    double avgLetters = letters / words * 100;
+
+    // Average number of sentenances per 100 words
+    double avgSentences = sentences / words * 100;
+
     // Coleman-Liau index
     //index = 0.0588 * L - 0.296 * S - 15.8
-    double avgLetters = letters / words * 100;
-    double avgSentences = sentences / words * 100;
-    double index = 0.0588 * avgLetters - 0.296 * avgSentences - 15.8;
+    double index = round(0.0588 * avgLetters - 0.296 * avgSentences - 15.8);
     printf("index: %f\n", index);
-    index = round(index);
-    printf("index: %f\n", index);
+
 
     if (grade >= 16)
     {
