@@ -85,8 +85,10 @@ int count_sentences(string text)
 {
     int sentences = 0;
 
-    for (int i = 0; i <= strlen(text); i++)
+    // Index through string
+    for (int i = 0; i < strlen(text); i++)
     {
+        // Increment number of sentences
         if (text[i] == '.' || text[i] == '?' || text[i] == '!')
         {
             sentences += 1;
