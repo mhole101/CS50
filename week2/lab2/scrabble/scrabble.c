@@ -47,7 +47,7 @@ int compute_score(string word)
 
     if (int i = 0; i < strlen(word); i++)
     {
-        
+        if ()
     }
 
     return score;

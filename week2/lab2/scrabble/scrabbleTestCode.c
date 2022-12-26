@@ -12,7 +12,7 @@ int main(void)
 
     printf("word1 length: %i\n", wordLen);
 
-    for (int i = 0; i <= wordLen; i++)
+    for (int i = 0; i <= strlen(word1); i++)
     {
         int charValue = word1[i];
         printf("word1[%i]: %c = %i\n", i, word1[i], charValue);
