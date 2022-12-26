@@ -50,7 +50,9 @@ int compute_score(string word)
         // adds 0 to score if char is not alpha
         if (isalpha(word[i]))
         {
-            
+            //Converts char to uppercase
+            char upperChar = toupper(word[i])
+            int pointsIndexNum = upperChar - 65;
             printf("word[%i]: %c is alpha!\n", i, word[i]);
         }
         else
