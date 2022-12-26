@@ -50,8 +50,13 @@ int count_words(string text)
     //indexes through string
     for (int i = 0; i < strlen(text); i++)
     {
-        if ()
+        if (isspace(text[i]))
+        {
+            words += 1;
+        }
     }
+
+    return words;
 
 
 }
