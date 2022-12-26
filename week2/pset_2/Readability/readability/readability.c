@@ -11,7 +11,7 @@ int main(void)
     string text = get_string("Text: ");
 
     int letters = count_letter(text);
-    printf("letters: %i\n", letters);
+    printf("%i letters\n", letters);
 
     if (grade >= 16)
     {
