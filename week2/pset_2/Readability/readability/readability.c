@@ -5,6 +5,7 @@
 
 int count_letter(string text);
 int count_words(string text);
+int count_sentences(string text);
 
 int main(void)
 {
@@ -21,6 +22,9 @@ int main(void)
 
     int words = count_words(text);
     printf("%i words\n", words);
+
+    int sentences = count_sentences(text);
+    printf("%i sentences\n", sentences);
 
     if (grade >= 16)
     {
@@ -69,5 +73,12 @@ int count_words(string text)
 
     return words;
 
+}
+
+int count_sentences(string text)
+{
+    int sentences = 0;
+
+    return sentences;
 
 }
