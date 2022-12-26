@@ -45,7 +45,7 @@ int compute_score(string word)
     // TODO: Compute and return score for string
     int score = 0;
 
-    if (int i = 0; i < strlen(word); i++)
+    for (int i = 0; i < strlen(word); i++)
     {
         if (isalpha(word[i]))
         {
