@@ -8,6 +8,10 @@ int main(void)
 
     string word1 = get_string("Player 1: ");
 
-    int wordLen = 
+    int wordLen = strlen(word1);
+
+    printf("word1 length: %i\n", wordLen);
+
+    for (int i = 0, )
 
 }
