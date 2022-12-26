@@ -3,6 +3,9 @@
 
 int main(void)
 {
-    string text = get_string(")
+    s
+    string text = get_string("Text: ");
+
+    printf("Grade %s\n" grade);
 
 }
