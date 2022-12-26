@@ -83,7 +83,9 @@ int count_words(string text)
 
 int count_sentences(string text)
 {
-    int sentences = 1;
+    int sentences = 0;
+
+    for (int i = 0; i <= strlen(text); i++)
 
     return sentences;
 
