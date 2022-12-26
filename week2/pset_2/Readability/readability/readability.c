@@ -10,7 +10,11 @@ int main(void)
 {
     int grade = 17;
     string text = get_string("Text: ");
-    int 
+
+    for (int i = 0; i <= strlen(text); i++)
+    {
+        printf("text[%i]: %c = %i\n", i, text[i], text[i]);
+    }
 
     int letters = count_letter(text);
     printf("%i letters\n", letters);
