@@ -1,5 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 
 int count_letter(string text);
 
@@ -7,6 +9,9 @@ int main(void)
 {
     int grade = 17;
     string text = get_string("Text: ");
+
+    int letters = count_letter(text);
+    printf("letters: %i\n", letters);
 
     if (grade >= 16)
     {
@@ -26,5 +31,14 @@ int main(void)
 
 int count_letter(string text)
 {
-    for (int i = 0; i < st)
+    int letters = 0;
+    for (int i = 0; i < strlen(text); i++)
+    {
+        if (isalpha(text[i]))
+        {
+            letters += 1;
+        }
+    }
+
+    return letters;
 }
