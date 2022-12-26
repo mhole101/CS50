@@ -8,6 +8,6 @@ int main(void)
 
     string word1 = get_string("Player 1: ");
 
-    int wordLen= = 
+    int wordLen = 
 
 }
