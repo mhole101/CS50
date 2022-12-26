@@ -37,8 +37,8 @@ int main(void)
 
     // Coleman-Liau index
     //index = 0.0588 * L - 0.296 * S - 15.8
+    // Round Coleman-Liau Index into index variable
     double index = round(0.0588 * avgLetters - 0.296 * avgSentences - 15.8);
-    printf("index: %f\n", index);
 
     // Print grade based off of index
     if (index >= 16)
@@ -60,6 +60,7 @@ int main(void)
 int count_letter(string text)
 {
     int letters = 0;
+    //
     for (int i = 0; i < strlen(text); i++)
     {
         if (isalpha(text[i]))
