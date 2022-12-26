@@ -23,11 +23,11 @@ int main(void)
     printf("%i sentences\n", sentences);
 
     // Average number of letter per 100 words
-    double avgLetters = letters;
+    double avgLetters = letters / words * 100;
     printf("AvgLetters: %f\n", avgLetters);
 
     // Average number of sentenances per 100 words
-    double testSen = sentences / words;
+    double testSen = sentences;
     printf("testSen: %f\n", testSen);
     double avgSentences = sentences / words * 100;
     printf("avgSentences: %f\n", avgSentences);
