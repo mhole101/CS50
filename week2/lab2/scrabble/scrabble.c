@@ -47,13 +47,15 @@ int compute_score(string word)
 
     for (int i = 0; i < strlen(word); i++)
     {
+        // adds 0 to score if char is not alpha
         if (isalpha(word[i]))
         {
+            
             printf("word[%i]: %c is alpha!\n", i, word[i]);
         }
         else
         {
-            printf("word[%i]: %c NOT alpha!\n", i, word[i]);
+            score += 0;
         }
     }
 
