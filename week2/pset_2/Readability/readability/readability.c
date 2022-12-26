@@ -10,6 +10,7 @@ int count_sentences(string text);
 
 int main(void)
 {
+    // Get text
     string text = get_string("Text: ");
 
     int letters = count_letter(text);
@@ -49,7 +50,7 @@ int main(void)
     }
     else
     {
-        printf("Grade: %i\n", (int)index);
+        printf("Grade %i\n", (int)index);
     }
 
 
