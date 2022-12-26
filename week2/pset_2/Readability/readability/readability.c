@@ -10,7 +10,6 @@ int count_sentences(string text);
 
 int main(void)
 {
-    int grade = 17;
     string text = get_string("Text: ");
 
     int letters = count_letter(text);
@@ -40,17 +39,17 @@ int main(void)
     printf("index: %f\n", index);
 
 
-    if (grade >= 16)
+    if (index >= 16)
     {
         printf("Grade 16+\n");
     }
-    else if (grade < 1)
+    else if (index < 1)
     {
         printf("Before Grade 1\n");
     }
     else
     {
-        printf("Grade: %i\n", grade);
+        printf("Grade: %i\n", (int)index);
     }
 
 
