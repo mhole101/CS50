@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <math.h>
 
 int count_letter(string text);
 int count_words(string text);
@@ -32,7 +33,7 @@ int main(void)
     double avgSentences = sentences / words * 100;
     double index = 0.0588 * avgLetters - 0.296 * avgSentences - 15.8;
     printf("index: %f\n", index);
-    int index2 = round(index);
+    index = round(index);
     printf("index: %f\n", index);
 
     if (grade >= 16)
