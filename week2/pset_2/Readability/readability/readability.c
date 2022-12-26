@@ -31,9 +31,9 @@ int main(void)
     double avgLetters = letters / words * 100;
     double avgSentences = sentences / words * 100;
     double index = 0.0588 * avgLetters - 0.296 * avgSentences - 15.8;
-    printf("index: %i\n", index);
+    printf("index: %f\n", index);
     index round(index);
-    printf("index: %i\n", index);
+    printf("index: %f\n", index);
 
     if (grade >= 16)
     {
