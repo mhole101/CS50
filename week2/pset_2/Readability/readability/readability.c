@@ -10,9 +10,13 @@ int main(void)
 {
     int grade = 17;
     string text = get_string("Text: ");
+    int 
 
     int letters = count_letter(text);
     printf("%i letters\n", letters);
+
+    int words = count_words(text);
+    printf("%i words\n", words);
 
     if (grade >= 16)
     {
@@ -48,7 +52,7 @@ int count_words(string text)
 {
     int words = 0;
     //indexes through string
-    for (int i = 0; i < strlen(text); i++)
+    for (int i = 0; i <= strlen(text); i++)
     {
         if (isspace(text[i]))
         {
