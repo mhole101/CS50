@@ -29,7 +29,7 @@ int main(void)
 
     // Average number of sentenances per 100 words
     // Must explicitly convert words int to double to get decimal values
-    double avgSentences = sentences / (double)words * 100.0;
+    double avgSentences = sentences / (double)words * 100;
     printf("avgSentences: %f\n", avgSentences);
 
     // Coleman-Liau index
