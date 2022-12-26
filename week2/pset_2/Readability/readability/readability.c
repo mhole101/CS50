@@ -1,6 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
+int count_letter(string text);
+
 int main(void)
 {
     int grade = 17;
@@ -20,4 +22,9 @@ int main(void)
     }
 
 
+}
+
+int count_letter(string text)
+{
+    for (int i = 0; i < st)
 }
