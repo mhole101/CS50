@@ -26,6 +26,9 @@ int main(void)
     int sentences = count_sentences(text);
     printf("%i sentences\n", sentences);
 
+    // Coleman-Liau index
+    int index = 0.0588 * L - 0.296 * S - 15.8;
+
     if (grade >= 16)
     {
         printf("Grade 16+\n");
