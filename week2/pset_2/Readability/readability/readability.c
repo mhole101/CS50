@@ -32,7 +32,7 @@ int main(void)
     double avgSentences = sentences / words * 100;
     double index = 0.0588 * avgLetters - 0.296 * avgSentences - 15.8;
     printf("index: %f\n", index);
-    index round(index);
+    index = round(index);
     printf("index: %f\n", index);
 
     if (grade >= 16)
