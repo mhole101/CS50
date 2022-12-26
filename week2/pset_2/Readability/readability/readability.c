@@ -24,9 +24,11 @@ int main(void)
 
     // Average number of letter per 100 words
     double avgLetters = letters / words * 100;
+    printf("AvgLetters: %f\n", avgLetters);
 
     // Average number of sentenances per 100 words
     double avgSentences = sentences / words * 100;
+    printf("avgSentences: %f\n", avgSentences);
 
     // Coleman-Liau index
     //index = 0.0588 * L - 0.296 * S - 15.8
