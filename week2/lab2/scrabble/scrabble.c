@@ -34,9 +34,10 @@ int main(void)
     else
     {
         printf("Error\n");
-        return 0;
+        return 1;
     }
-    return 1;
+
+    return 0;
 }
 
 int compute_score(string word)
