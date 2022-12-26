@@ -34,6 +34,8 @@ int main(void)
 
     // Coleman-Liau index
     //index = 0.0588 * L - 0.296 * S - 15.8
+    double indexTest = 0.0588 * avgLetters - 0.296 * avgSentences - 15.8;
+    printf("indexTest: %f\n", indexTest);
     double index = round(0.0588 * avgLetters - 0.296 * avgSentences - 15.8);
     printf("index: %f\n", index);
 
