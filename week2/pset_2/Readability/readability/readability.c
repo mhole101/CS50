@@ -80,9 +80,10 @@ int count_words(string text)
         if (isspace(text[i]))
         {
             words += 1;
-        } else if (text[i] == 0)
+        }
         // Add to total words if null char is detected
         // Used to detect last word of text
+        else if (text[i] == 0)
         {
             words += 1;
         }
