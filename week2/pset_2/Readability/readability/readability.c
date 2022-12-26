@@ -4,6 +4,7 @@
 #include <ctype.h>
 
 int count_letter(string text);
+int count_words(string text);
 
 int main(void)
 {
@@ -41,4 +42,10 @@ int count_letter(string text)
     }
 
     return letters;
+}
+
+int count_words(string text)
+{
+    
+
 }
