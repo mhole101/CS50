@@ -15,25 +15,20 @@ int main(void)
 
     // Get letter count from text
     int letters = count_letter(text);
-    printf("%i letters\n", letters);
 
     // Get word count from text
     int words = count_words(text);
-    printf("%i words\n", words);
 
     // Get sentence count from text
     int sentences = count_sentences(text);
-    printf("%i sentences\n", sentences);
 
     // Average number of letter per 100 words
     // Must explicitly convert words int to double to get decimal values
     double avgLetters = letters / (double)words * 100;
-    printf("AvgLetters: %f\n", avgLetters);
 
     // Average number of sentenances per 100 words
     // Must explicitly convert words int to double to get decimal values
     double avgSentences = sentences / (double)words * 100;
-    printf("avgSentences: %f\n", avgSentences);
 
     // Coleman-Liau index
     //index = 0.0588 * L - 0.296 * S - 15.8
@@ -85,12 +80,12 @@ int count_words(string text)
         if (isspace(text[i]))
         {
             words += 1;
-        } /*else if (text[i] == 0)
+        } else if (text[i] == 0)
         // Add to total words if null char is detected
+        // Used to detect last word of text
         {
             words += 1;
         }
-        */
     }
 
     return words;
