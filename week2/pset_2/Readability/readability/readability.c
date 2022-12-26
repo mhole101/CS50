@@ -28,8 +28,8 @@ int main(void)
 
     // Coleman-Liau index
     //index = 0.0588 * L - 0.296 * S - 15.8
-    int avgLetters = 0;
-    int avgSentences = 0;
+    int avgLetters = letters / words * 100;
+    int avgSentences = sentences / words * 100;
     int index = 0.0588 * avgLetters - 0.296 * avgSentences - 15.8;
 
     if (grade >= 16)
