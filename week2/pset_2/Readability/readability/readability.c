@@ -54,7 +54,7 @@ int count_letter(string text)
 
 int count_words(string text)
 {
-    int words = 0;
+    int words = -1;
     //indexes through string
     for (int i = 0; i <= strlen(text); i++)
     {
@@ -63,6 +63,8 @@ int count_words(string text)
             words += 1;
         }
     }
+
+    words += 1;
 
     return words;
 
