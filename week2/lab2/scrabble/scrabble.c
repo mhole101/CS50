@@ -54,12 +54,13 @@ int compute_score(string word)
             char upperChar = toupper(word[i]);
             int pointsIndexNum = upperChar - 65;
             printf("word[%i]: %c is alpha! upper: %c = %i\n", i, word[i], upperChar, pointsIndexNum);
+            score += POINTS[upperChar - 65];
         }
         else
         {
             score += 0;
         }
     }
-
+    printf("score = %i\n", score);
     return score;
 }
