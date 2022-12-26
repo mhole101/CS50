@@ -61,10 +61,11 @@ int count_words(string text)
         if (isspace(text[i]))
         {
             words += 1;
+        } else if (text[i] == 0)
+        {
+            words += 1;
         }
     }
-
-    words += 1;
 
     return words;
 
