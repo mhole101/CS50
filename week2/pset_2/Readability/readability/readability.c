@@ -60,9 +60,11 @@ int main(void)
 int count_letter(string text)
 {
     int letters = 0;
-    //
+
+    // Index through text string
     for (int i = 0; i < strlen(text); i++)
     {
+        // If char is a letter add to total letters
         if (isalpha(text[i]))
         {
             letters += 1;
@@ -75,16 +77,20 @@ int count_letter(string text)
 int count_words(string text)
 {
     int words = 0;
+
     //indexes through string
     for (int i = 0; i <= strlen(text); i++)
     {
+        // Add to total words if whitespace is detected
         if (isspace(text[i]))
         {
             words += 1;
-        } else if (text[i] == 0)
+        } /*else if (text[i] == 0)
+        // Add to total words if null char is detected
         {
             words += 1;
         }
+        */
     }
 
     return words;
