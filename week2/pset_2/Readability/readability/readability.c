@@ -13,12 +13,15 @@ int main(void)
     // Get text
     string text = get_string("Text: ");
 
+    // Get letter count from text
     int letters = count_letter(text);
     printf("%i letters\n", letters);
 
+    // Get word count from text
     int words = count_words(text);
     printf("%i words\n", words);
 
+    // Get sentence count from text
     int sentences = count_sentences(text);
     printf("%i sentences\n", sentences);
 
@@ -34,12 +37,10 @@ int main(void)
 
     // Coleman-Liau index
     //index = 0.0588 * L - 0.296 * S - 15.8
-    double indexTest = 0.0588 * avgLetters - 0.296 * avgSentences - 15.8;
-    printf("indexTest: %f\n", indexTest);
     double index = round(0.0588 * avgLetters - 0.296 * avgSentences - 15.8);
     printf("index: %f\n", index);
 
-
+    // Print grade based off of index
     if (index >= 16)
     {
         printf("Grade 16+\n");
