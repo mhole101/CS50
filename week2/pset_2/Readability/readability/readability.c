@@ -23,12 +23,13 @@ int main(void)
     printf("%i sentences\n", sentences);
 
     // Average number of letter per 100 words
-    // Must explicitly co
-    double avgLetters = letters / (double)words * 100.0;
+    // Must explicitly convert words int to double to get decimal values
+    double avgLetters = letters / (double)words * 100;
     printf("AvgLetters: %f\n", avgLetters);
 
     // Average number of sentenances per 100 words
-   double avgSentences = sentences / (double)words * 100.0;
+    // Must explicitly convert words int to double to get decimal values
+    double avgSentences = sentences / (double)words * 100.0;
     printf("avgSentences: %f\n", avgSentences);
 
     // Coleman-Liau index
