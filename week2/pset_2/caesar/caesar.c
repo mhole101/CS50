@@ -43,7 +43,7 @@ int keyCheck(int argc, string argv[])
 {
     if (argc == 2)
     {
-        //if (!)
+        if (keyIsNum())
 
     }
     else
