@@ -18,5 +18,11 @@ int main(int argc, string argv[])
 
 int keyCheck(int argc, string argv[])
 {
+    if (argc == 1)
+    {
+        printf("Usage: ./caesar key\n");
+    }
+    else if ()
 
+    return 0;
 }
