@@ -29,8 +29,11 @@ bool keyIsNum(string key)
 {
     for (int i = 0; i < strlen(key); i++)
     {
-        if (isdigit(key[i]))
-        return 1;
+        if (!isdigit(key[i]))
+        {
+            return 0;
+        }
+
     }
 
     return 0;
