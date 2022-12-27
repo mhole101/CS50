@@ -16,6 +16,11 @@ int main(int argc, string argv[])
         printf("argv[%i]: %s\n", i, argv[i]);
     }
 
+    if (keyIsNum(argv[1]))
+    {
+        printf("key is num\n");
+    }
+
     return 0;
 
 }
@@ -24,7 +29,7 @@ bool keyIsNum(string key)
 {
     for (int i = 0; i < strlen(key); i++)
     {
-        if (!isdigit(key[i]))
+        if (isdigit(key[i]))
         return 1;
     }
 
@@ -35,6 +40,7 @@ int keyCheck(int argc, string argv[])
 {
     if (argc == 2)
     {
+        //if (!)
 
     }
     else
