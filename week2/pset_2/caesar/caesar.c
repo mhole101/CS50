@@ -47,7 +47,7 @@ int keyCheck(int argc, string argv[])
         for (int i = 0; i < strlen(argv[1]); i++)
         {
             // Check key in numeric
-            if (!keyIsNum(argv[1][i]))
+            if (!keyIsNum(argv[1]))
             {
                 printf("Usage: ./caesar key\n");
                 return 1;
