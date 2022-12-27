@@ -22,7 +22,7 @@ int keyCheck(int argc, string argv[])
     {
         printf("Usage: ./caesar key\n");
     }
-    else if ()
+    else if (argc)
 
     return 0;
 }
