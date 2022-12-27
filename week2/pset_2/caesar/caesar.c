@@ -24,9 +24,11 @@ bool keyIsNum(string key)
 {
     for (int i = 0; i < strlen(key); i++)
     {
-        if (!key[i])
+        if (!isdigit(key[i]))
+        return 1;
     }
 
+    return 0;
 }
 
 int keyCheck(int argc, string argv[])
