@@ -11,16 +11,14 @@ int main(int argc, string argv[])
 {
     printf("argc: %i\n", argc);
 
-    for (int i = 0; i < argc; i++)
-    {
-        
+    int faultCode = keyCheck(argc, argv);
 
-    }
-
-    if (keyIsNum(argv[1]))
+    // debug to test faultCode and keyCheck
+    if (!faultCode)
     {
         printf("key is num\n");
     }
+    
 
     return 0;
 
