@@ -36,7 +36,7 @@ bool keyIsNum(string key)
 
     }
 
-    return 0;
+    return 1;
 }
 
 int keyCheck(int argc, string argv[])
