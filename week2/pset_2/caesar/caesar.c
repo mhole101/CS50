@@ -11,15 +11,9 @@ int main(int argc, string argv[])
 {
     printf("argc: %i\n", argc);
 
-    for (int i = 0; i < argc; i++)
-    {
-        printf("argv[%i]: %s\n", i, argv[i]);
-    }
+    
 
-    if (keyIsNum(argv[1]))
-    {
-        printf("key is num\n");
-    }
+
 
     return 0;
 
@@ -48,7 +42,7 @@ int keyCheck(int argc, string argv[])
         {
             printf("Usage: ./caesar key\n");
             return 1;
-        } 
+        }
 
         return 0;
     }
