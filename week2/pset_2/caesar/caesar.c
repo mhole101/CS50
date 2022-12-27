@@ -11,9 +11,16 @@ int main(int argc, string argv[])
 {
     printf("argc: %i\n", argc);
 
-    
+    for (int i = 0; i < argc; i++)
+    {
+        
 
+    }
 
+    if (keyIsNum(argv[1]))
+    {
+        printf("key is num\n");
+    }
 
     return 0;
 
