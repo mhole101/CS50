@@ -79,6 +79,7 @@ char rotate(char pChar, int charInt)
         // Convert Upper
         charMath -= 65;
         printf("charMath: %i\n", charMath);
+        return pChar;
 
     }
     else if (pChar >= 97 && pChar <= 122)
@@ -86,6 +87,7 @@ char rotate(char pChar, int charInt)
         // Convert Lower
         charMath -= 97;
         printf("charMath: %i\n", charMath);
+        return pChar;
     }
     else
     {
