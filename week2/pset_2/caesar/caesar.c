@@ -61,6 +61,7 @@ int main(int argc, string argv[])
 
 
     return 1;
+    */
 
 }
 
@@ -76,7 +77,6 @@ bool only_digits(string key)
     }
 
     return 1;
-    */
 }
 
 int keyCheck(int argc, string argv[])
