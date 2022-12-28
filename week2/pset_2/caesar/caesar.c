@@ -75,19 +75,13 @@ char rotate(char pChar, int key)
 {
     //
     int charMath = pChar;
+    char returnChar;
 
     if (pChar >= 65 && pChar <= 90)
     {
         // Convert Upper
         charMath = ((charMath - 65) + key) % 25;
-        /*
-        charMath -= 65;
-        printf("charMath: %i\n", charMath);
-        charMath += key;
-        printf("charMath: %i\n", charMath);
-        charMath %= 25;
-        */
-        printf("charMath: %i\n", charMath);
+
         return pChar;
 
     }
