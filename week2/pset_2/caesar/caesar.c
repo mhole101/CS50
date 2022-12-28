@@ -7,6 +7,9 @@
 bool keyIsNum(string key);
 int keyCheck(int argc, string argv[]);
 
+char UPPERCASE_ARRAY[26] = {A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z};
+char LOWERCASE_ARRAY[26] = {}
+
 int main(int argc, string argv[])
 {
     printf("argc: %i\n", argc);

@@ -6,12 +6,12 @@
 
 int main(void)
 {
-    char test = 'A';
+    char test = 'a';
     //int charTest = test;
     printf("test: %c\n", test);
     //printf("test: %i\n", test);
 
-    while (test < 91)
+    while (test < 123)
     {
         printf("%c, ", test);
         test++;
