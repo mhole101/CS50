@@ -11,8 +11,9 @@ int main(void)
     printf("test: %c\n", test);
     //printf("test: %i\n", test);
 
-    if (test == 65)
+    while (test < 91)
     {
-        printf("YES\n");
+        printf("%c, ", test);
+        test++;
     }
 }
