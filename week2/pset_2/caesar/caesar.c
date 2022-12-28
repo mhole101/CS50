@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-bool keyIsNum(string key);
+bool only_digits(string key);
 int keyCheck(int argc, string argv[]);
 
 char UPPERCASE_ARRAY[26] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
@@ -48,7 +48,7 @@ int main(int argc, string argv[])
 
 }
 
-bool keyIsNum(string key)
+bool only_digits(string key)
 {
     for (int i = 0; i < strlen(key); i++)
     {
