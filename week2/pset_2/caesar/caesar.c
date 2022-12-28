@@ -80,8 +80,8 @@ char rotate(char pChar, int key)
     if (pChar >= 65 && pChar <= 90)
     {
         // Convert Upper
-        //charMath = ((charMath - 65) + key) % 25;
-        returnChar = ((charMath - 65) + key) % 25;
+        //
+        returnChar = (((charMath - 65) + key) % 25) + 65;
 
         return returnChar;
 
@@ -89,8 +89,7 @@ char rotate(char pChar, int key)
     else if (pChar >= 97 && pChar <= 122)
     {
         // Convert Lower
-        //charMath = ((charMath - 97) + key) % 25;
-        returnChar = ((charMath - 97) + key) % 25;
+        returnChar = (((charMath - 97) + key) % 25) + 97;
 
         return returnChar;
     }
