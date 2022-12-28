@@ -14,9 +14,10 @@ int main(int argc, string argv[])
 {
     printf("argc: %i\n", argc);
 
+    // Check key and sends back fault code of 1 if incorrect
     int faultCode = keyCheck(argc, argv);
 
-    // debug to test faultCode and keyCheck
+    // checks fault code.  if 1 ends program
     if (!faultCode)
     {
         int key = atoi(argv[1]);
