@@ -63,6 +63,22 @@ bool only_digits(string key)
 char rotate(char pChar, int charInt)
 {
 
+    if (pChar >= 65 && pChar <= 90)
+    {
+        // Convert Upper
+
+    }
+    else if (pChar >= 97 && pChar <= 122)
+    {
+        // Convert Lower
+    }
+    else
+    {
+        // Return character if not letter
+        return pChar;
+    }
+
+
     return 'a';
 }
 
