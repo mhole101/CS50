@@ -62,15 +62,21 @@ bool only_digits(string key)
 
 char rotate(char pChar, int charInt)
 {
+    //
+    int charMath = pChar;
 
     if (pChar >= 65 && pChar <= 90)
     {
         // Convert Upper
+        charMath -= 65;
+        printf("charMath: %i\n", charMath);
 
     }
     else if (pChar >= 97 && pChar <= 122)
     {
         // Convert Lower
+        charMath -= 97;
+        printf("charMath: %i\n", charMath);
     }
     else
     {
