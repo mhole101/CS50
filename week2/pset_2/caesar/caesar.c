@@ -29,10 +29,10 @@ int main(int argc, string argv[])
 
             printf("ciphertext: ");
 
-            char
-
             for (int i = 0; i < strlen(plaintext); i++)
             {
+                char printChar = rotate(plaintext[i], key);
+                printf("%c", printChar);
 
             }
 
