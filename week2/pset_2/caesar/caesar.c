@@ -14,10 +14,22 @@ int main(int argc, string argv[])
 {
     printf("argc: %i\n", argc);
 
+    // Check that user input is correct
     if (argc == 2)
     {
-        printf("Correct\n");
-        return 0;
+        if (only_digits(argv[1]))
+        {
+            printf("Correct\n");
+            return 0;
+
+        }
+        else
+        {
+            printf("Usage: ./caesar key\n");
+            return 1;
+        }
+
+
     }
     else
     {
@@ -67,7 +79,7 @@ int keyCheck(int argc, string argv[])
     if (argc == 2)
     {
         // Check key in numeric
-        if (!keyIsNum(argv[1]))
+        if (!(argv[1]))
         {
             printf("Usage: ./caesar key\n");
             return 1;
