@@ -79,7 +79,7 @@ int keyCheck(int argc, string argv[])
     if (argc == 2)
     {
         // Check key in numeric
-        if (!(argv[1]))
+        if (!only_digits(argv[1]))
         {
             printf("Usage: ./caesar key\n");
             return 1;
