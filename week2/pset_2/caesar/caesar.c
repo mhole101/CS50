@@ -20,6 +20,7 @@ int main(int argc, string argv[])
     // checks fault code.  if 1 ends program
     if (!faultCode)
     {
+        // Converts string key to int
         int key = atoi(argv[1]);
         printf("key: %i\n", key);
 
