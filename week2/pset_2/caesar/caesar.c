@@ -27,6 +27,15 @@ int main(int argc, string argv[])
             // Prompt user for plaintext
             string plaintext = get_string("plaintext:  ");
 
+            printf("ciphertext: ");
+
+            char
+
+            for (int i = 0; i < strlen(plaintext); i++)
+            {
+
+            }
+
             return 0;
 
         }
@@ -84,8 +93,6 @@ char rotate(char pChar, int charInt)
         return pChar;
     }
 
-
-    return 'a';
 }
 
 
