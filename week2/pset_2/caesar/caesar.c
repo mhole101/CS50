@@ -29,6 +29,7 @@ int main(int argc, string argv[])
 
             printf("ciphertext: ");
 
+            // Iterate through plain text and print out ciphertext
             for (int i = 0; i < strlen(plaintext); i++)
             {
                 char printChar = rotate(plaintext[i], key);
@@ -80,7 +81,7 @@ char rotate(char pChar, int key)
     if (pChar >= 65 && pChar <= 90)
     {
         // Convert Upper
-        //
+        // ci = (pi + k)%26 - used 25 because starting at 0
         returnChar = (((charMath - 65) + key) % 25) + 65;
 
         return returnChar;
