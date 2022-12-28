@@ -5,7 +5,7 @@
 #include <string.h>
 
 bool only_digits(string key);
-char rotate(char pChar, int charInt);
+char rotate(char pChar, int key);
 
 char UPPERCASE_ARRAY[26] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 char LOWERCASE_ARRAY[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
@@ -69,7 +69,7 @@ bool only_digits(string key)
     return 1;
 }
 
-char rotate(char pChar, int charInt)
+char rotate(char pChar, int key)
 {
     //
     int charMath = pChar;
@@ -79,6 +79,10 @@ char rotate(char pChar, int charInt)
         // Convert Upper
         charMath -= 65;
         printf("charMath: %i\n", charMath);
+        charMath += key;
+        printf("charMath: %i\n", charMath);
+        charMath %= 25;
+        printf("charMath: %i\n", charMath);
         return pChar;
 
     }
@@ -86,6 +90,10 @@ char rotate(char pChar, int charInt)
     {
         // Convert Lower
         charMath -= 97;
+        printf("charMath: %i\n", charMath);
+        charMath += key;
+        printf("charMath: %i\n", charMath);
+        charMath %= 25;
         printf("charMath: %i\n", charMath);
         return pChar;
     }
