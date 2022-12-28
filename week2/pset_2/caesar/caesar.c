@@ -12,8 +12,6 @@ char LOWERCASE_ARRAY[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k
 
 int main(int argc, string argv[])
 {
-    printf("argc: %i\n", argc);
-
     // Check that user input is correct
     if (argc == 2)
     {
@@ -22,7 +20,6 @@ int main(int argc, string argv[])
         {
             // Converts key string to int
             int key = atoi(argv[1]);
-            printf("key: %i\n", key);
 
             // Prompt user for plaintext
             string plaintext = get_string("plaintext:  ");
