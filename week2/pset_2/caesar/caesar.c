@@ -17,9 +17,11 @@ int main(int argc, string argv[])
     // Check that user input is correct
     if (argc == 2)
     {
+        // Checks that key is numeric
         if (only_digits(argv[1]))
         {
-            printf("Correct\n");
+            int key = atoi(argv[1]);
+            printf("key: %i\n", key);
             return 0;
 
         }
