@@ -39,6 +39,8 @@ int main(int argc, string argv[])
         return 1;
     }
 
+    /*
+
     // Check key and sends back fault code of 1 if incorrect
     int faultCode = keyCheck(argc, argv);
 
@@ -74,6 +76,7 @@ bool only_digits(string key)
     }
 
     return 1;
+    */
 }
 
 int keyCheck(int argc, string argv[])
