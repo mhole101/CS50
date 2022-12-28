@@ -16,11 +16,19 @@ int main(int argc, string argv[])
     // debug to test faultCode and keyCheck
     if (!faultCode)
     {
-        printf("key is num\n");
-    }
-    
+        int key = atoi(argv[1]);
+        printf("key: %i\n", key);
 
-    return 0;
+        string plaintext = get_string("plaintext:  ");
+
+        string ciphertext = "ciphertext";
+        printf("ciphertext: %s\n", ciphertext);
+
+        return 0;
+    }
+
+
+    return 1;
 
 }
 
