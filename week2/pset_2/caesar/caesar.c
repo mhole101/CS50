@@ -79,7 +79,7 @@ char rotate(char pChar, int key)
     {
         // Convert Upper
         // ci = (pi + k)%26 - used 25 because starting at 0
-        returnChar = (((charMath - 65) + key) % 25) + 65;
+        returnChar = (((charMath - 65) + key) % 26) + 65;
 
         return returnChar;
 
@@ -87,7 +87,7 @@ char rotate(char pChar, int key)
     else if (pChar >= 97 && pChar <= 122)
     {
         // Convert Lower
-        returnChar = (((charMath - 97) + key) % 25) + 97;
+        returnChar = (((charMath - 97) + key) % 26) + 97;
 
         return returnChar;
     }
