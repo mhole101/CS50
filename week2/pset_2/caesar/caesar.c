@@ -14,6 +14,17 @@ int main(int argc, string argv[])
 {
     printf("argc: %i\n", argc);
 
+    if (argc == 2)
+    {
+        printf("Correct\n");
+        return 0;
+    }
+    else
+    {
+        printf("Usage: ./caesar key\n");
+        return 1;
+    }
+
     // Check key and sends back fault code of 1 if incorrect
     int faultCode = keyCheck(argc, argv);
 
