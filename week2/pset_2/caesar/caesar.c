@@ -20,8 +20,13 @@ int main(int argc, string argv[])
         // Checks that key is numeric
         if (only_digits(argv[1]))
         {
+            // Converts key string to int
             int key = atoi(argv[1]);
             printf("key: %i\n", key);
+
+            // Prompt user for plaintext
+            string plaintext = get_string("plaintext:  ");
+
             return 0;
 
         }
@@ -39,30 +44,6 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    /*
-
-    // Check key and sends back fault code of 1 if incorrect
-    int faultCode = keyCheck(argc, argv);
-
-    // checks fault code.  if 1 ends program
-    if (!faultCode)
-    {
-        // Converts string key to int
-        int key = atoi(argv[1]);
-        printf("key: %i\n", key);
-
-        string plaintext = get_string("plaintext:  ");
-
-        string ciphertext = "ciphertext";
-        printf("ciphertext: %s\n", ciphertext);
-
-        return 0;
-    }
-
-
-    return 1;
-    */
-
 }
 
 bool only_digits(string key)
@@ -79,25 +60,7 @@ bool only_digits(string key)
     return 1;
 }
 
-int keyCheck(int argc, string argv[])
-{
-    if (argc == 2)
-    {
-        // Check key in numeric
-        if (!only_digits(argv[1]))
-        {
-            printf("Usage: ./caesar key\n");
-            return 1;
-        }
 
-        return 0;
-    }
-    else
-    {
-        printf("Usage: ./caesar key\n");
-        return 1;
-    }
 
-    return 0;
-}
+
 
