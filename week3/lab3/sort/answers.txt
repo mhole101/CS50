@@ -2,6 +2,12 @@ sort1 uses: TODO
 
 How do you know?: TODO
 
+
+time ./sort1 reversed5000.txt
+real    0m0.102s
+user    0m0.058s
+sys     0m0.025s
+
 time ./sort1 reversed10000.txt
 real    0m0.353s
 user    0m0.208s
