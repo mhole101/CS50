@@ -80,13 +80,19 @@ user    0m0.038s
 sys     0m0.199s
 
 time ./sort2 sorted5000.txt
-
+real    0m0.043s
+user    0m0.000s
+sys     0m0.021s
 
 time ./sort2 sorted10000.txt
-
+real    0m0.095s
+user    0m0.014s
+sys     0m0.039s
 
 time ./sort2 sorted50000.txt
-
+real    0m0.595s
+user    0m0.027s
+sys     0m0.201s
 
 How do you know?: TODO
 
