@@ -13,7 +13,9 @@ user    0m0.248s
 sys     0m0.046s
 
 time ./sort1 random50000.txt
-
+real    0m7.727s
+user    0m6.894s
+sys     0m0.241s
 
 time ./sort1 reversed5000.txt
 real    0m0.102s
@@ -29,6 +31,8 @@ time ./sort1 reversed50000.txt
 real    0m5.952s
 user    0m5.085s
 sys     0m0.210s
+
+
 
 
 sort2 uses: TODO
