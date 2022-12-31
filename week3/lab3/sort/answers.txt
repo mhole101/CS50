@@ -60,16 +60,24 @@ user    0m0.004s
 sys     0m0.047s
 
 time ./sort2 random50000.txt
-
+real    0m0.443s
+user    0m0.045s
+sys     0m0.183s
 
 time ./sort2 reversed5000.txt
-
+real    0m0.059s
+user    0m0.005s
+sys     0m0.022s
 
 time ./sort2 reversed10000.txt
-
+real    0m0.091s
+user    0m0.004s
+sys     0m0.038s
 
 time ./sort2 reversed50000.txt
-
+real    0m0.555s
+user    0m0.038s
+sys     0m0.199s
 
 time ./sort2 sorted5000.txt
 
