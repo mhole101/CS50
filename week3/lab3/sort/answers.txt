@@ -38,10 +38,14 @@ user    0m0.006s
 sys     0m0.021s
 
 time ./sort1 sorted10000.txt
-
+real    0m0.133s
+user    0m0.013s
+sys     0m0.033s
 
 time ./sort1 sorted50000.txt
-
+real    0m0.850s
+user    0m0.036s
+sys     0m0.196s
 
 sort2 uses: TODO
 
