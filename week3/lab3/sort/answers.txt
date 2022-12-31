@@ -101,11 +101,19 @@ sort3 uses: TODO
 How do you know?: TODO
 
 time ./sort3 random5000.txt
-
+real    0m0.060s
+user    0m0.029s
+sys     0m0.021s
 
 time ./sort3 random10000.txt
+real    0m0.201s
+user    0m0.102s
+sys     0m0.049s
 
 time ./sort3 random50000.txt
+real    0m3.163s
+user    0m2.604s
+sys     0m0.194s
 
 time ./sort3 reversed5000.txt
 
