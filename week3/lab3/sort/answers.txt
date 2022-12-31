@@ -2,6 +2,8 @@ sort1 uses: TODO
 
 How do you know?: TODO
 
+time ./sort1 
+
 sort2 uses: TODO
 
 How do you know?: TODO
