@@ -1,4 +1,4 @@
-sort1 uses: Selection sort
+sort1 uses: Bubble sort
 
 How do you know?:
 Selection is the slowest algorithm for longer random and reversed lists, but quicker than bubble for sorted lists.
@@ -104,7 +104,7 @@ real    0m0.595s
 user    0m0.027s
 sys     0m0.201s
 
-sort3 uses: Bubble sort
+sort3 uses: Selection sort
 
 How do you know?:
 Bubble sort has to run the same amount of steps for a list no matter if it is random, reversed or sorted.
