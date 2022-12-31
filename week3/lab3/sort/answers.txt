@@ -49,6 +49,8 @@ sys     0m0.196s
 
 sort2 uses: TODO
 
+How do you know?: TODO
+
 time ./sort2 random5000.txt
 real    0m0.087s
 user    0m0.012s
@@ -94,8 +96,25 @@ real    0m0.595s
 user    0m0.027s
 sys     0m0.201s
 
-How do you know?: TODO
-
 sort3 uses: TODO
 
 How do you know?: TODO
+
+time ./sort3 random5000.txt
+
+
+time ./sort3 random10000.txt
+
+time ./sort3 random50000.txt
+
+time ./sort3 reversed5000.txt
+
+time ./sort3 reversed10000.txt
+
+time ./sort3 reversed50000.txt
+
+time ./sort3 sorted5000.txt
+
+time ./sort3 sorted10000.txt
+
+time ./sort3 sorted50000.txt
