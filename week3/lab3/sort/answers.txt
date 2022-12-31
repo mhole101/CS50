@@ -1,6 +1,10 @@
-sort1 uses: TODO
+sort1 uses: Selection
 
-How do you know?: TODO
+How do you know?:
+Selection is the slowest algorithm for longer random and reversed lists, but quicker than bubble for sorted lists.
+sort1 is the slowest running program for random and reversed, but quicker than sort 3 for sorted5000.
+
+Runtimes:
 
 time ./sort1 random5000.txt
 real    0m0.155s
@@ -47,9 +51,13 @@ real    0m0.850s
 user    0m0.036s
 sys     0m0.196s
 
-sort2 uses: TODO
+sort2 uses: Merge
 
-How do you know?: TODO
+How do you know?:
+merge is the quickst running algorithm for larger lists.
+sort2 is the quickest running program for all lists.
+
+Runtimes:
 
 time ./sort2 random5000.txt
 real    0m0.087s
@@ -96,9 +104,13 @@ real    0m0.595s
 user    0m0.027s
 sys     0m0.201s
 
-sort3 uses: TODO
+sort3 uses: Bubble
 
-How do you know?: TODO
+How do you know?:
+Bubble sort has to run the same amount of steps for a list no matter if it is random, reversed or sorted.
+sort3 program takes about the same amount of time to run random, reversed and sorted lists.
+
+Runtimes:
 
 time ./sort3 random5000.txt
 real    0m0.060s
