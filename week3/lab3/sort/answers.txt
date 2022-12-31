@@ -1,7 +1,7 @@
 sort1 uses: Bubble sort
 
 How do you know?:
-Selection is the slowest algorithm for longer random and reversed lists, but quicker than bubble for sorted lists.
+Bubble is the slowest algorithm for longer random and reversed lists, but quicker than selection for sorted lists.
 sort1 is the slowest running program for random and reversed, but quicker than sort 3 for sorted5000.
 
 Runtimes:
@@ -107,7 +107,7 @@ sys     0m0.201s
 sort3 uses: Selection sort
 
 How do you know?:
-Bubble sort has to run the same amount of steps for a list no matter if it is random, reversed or sorted.
+Selection sort has to run the same amount of steps for a list no matter if it is random, reversed or sorted.
 sort3 program takes about the same amount of time to run random, reversed and sorted lists.
 
 Runtimes:
