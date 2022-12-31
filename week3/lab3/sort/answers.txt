@@ -116,13 +116,31 @@ user    0m2.604s
 sys     0m0.194s
 
 time ./sort3 reversed5000.txt
+real    0m0.052s
+user    0m0.030s
+sys     0m0.021s
 
 time ./sort3 reversed10000.txt
+real    0m0.211s
+user    0m0.139s
+sys     0m0.033s
 
 time ./sort3 reversed50000.txt
+real    0m3.368s
+user    0m2.677s
+sys     0m0.215s
 
 time ./sort3 sorted5000.txt
+real    0m0.048s
+user    0m0.032s
+sys     0m0.016s
 
 time ./sort3 sorted10000.txt
+real    0m0.182s
+user    0m0.119s
+sys     0m0.041s
 
 time ./sort3 sorted50000.txt
+real    0m3.216s
+user    0m2.637s
+sys     0m0.218s
