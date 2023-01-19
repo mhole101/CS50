@@ -66,10 +66,16 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    // TODO
+    // iterate through canidates
     for (int i = 0; i < canidate_count; i++)
     {
-        
+        // compare vote with canidates
+        if(!strcmp(name, canidates.name[i]))
+        {
+            canidates.votes[i]++;
+            return true;
+        }
+
     }
     return false;
 }
