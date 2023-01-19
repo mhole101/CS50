@@ -67,12 +67,12 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // iterate through canidates
-    for (int i = 0; i < canidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         // compare vote with canidates
-        if(!strcmp(name, canidates.name[i]))
+        if(!strcmp(name, candidates.name[i]))
         {
-            canidates.votes[i]++;
+            candidates.votes[i]++;
             return true;
         }
 
