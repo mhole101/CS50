@@ -69,11 +69,10 @@ bool vote(string name)
     // iterate through canidates
     for (int i = 0; i < candidate_count; i++)
     {
-        string temp = candidates.name[i];
         // compare vote with canidates
-        if (!strcmp(name, temp))
+        if (!strcmp(name, candidates[i].name))
         {
-            candidates.votes[i]++;
+            candidates[i].votes++;
             return true;
         }
 
