@@ -86,13 +86,26 @@ void print_winner(void)
 {
     int winningVotes = 0;
 
-    for (int i = 1; i <= candidate_count; i++)
+    // iterate though candidates and check for most votes
+    for (int i = 0; i <= candidate_count; i++)
     {
-        if (candidate[i] > winningVotes
+        if (candidates[i].votes > winningVotes)
+        {
+            winningVotes = candidates[i].votes;
+        }
 
     }
 
-    printf("The winner is %s\n", winner.name);
+    printf("The winner is:\n");
+
+    // check for and print winners
+    for (int j = 0; j <= candidate_count; j++)
+    {
+        if (candidates[j].votes == winningVotes)
+        {
+            printf("%s\n", candidates[j].name);
+        }
+    }
     return;
-    */
+
 }
