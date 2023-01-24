@@ -96,8 +96,6 @@ void print_winner(void)
 
     }
 
-    printf("The winner is:\n");
-
     // check for and print winners
     for (int j = 0; j <= candidate_count; j++)
     {
